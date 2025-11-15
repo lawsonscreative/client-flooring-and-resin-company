@@ -300,7 +300,7 @@ export default function Services() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Personal service</h3>
               <p className="text-gray-600 leading-relaxed">
-                Katie brings an approachable, caring touch to every project. You're not just a number to us.
+                Katie brings an approachable, caring touch to every project. You&apos;re not just a number to us.
               </p>
             </div>
           </div>
@@ -315,7 +315,7 @@ export default function Services() {
               Ready to transform your space?
             </h2>
             <p className="text-xl md:text-2xl mb-12 text-blue-50 leading-relaxed">
-              From a single room to a complete commercial fit-out, we're here to help. Get in touch for a no-obligation chat about your flooring needs.
+              From a single room to a complete commercial fit-out, we&apos;re here to help. Get in touch for a no-obligation chat about your flooring needs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

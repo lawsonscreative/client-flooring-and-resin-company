@@ -77,7 +77,7 @@ export default function About() {
               Why choose us
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              We're committed to delivering outstanding results on every project
+              We&apos;re committed to delivering outstanding results on every project
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Family-run business</h3>
               <p className="text-gray-600 leading-relaxed">
-                Personal service and genuine care on every project. You'll work directly with George and Katie, not faceless contractors.
+                Personal service and genuine care on every project. You&apos;ll work directly with George and Katie, not faceless contractors.
               </p>
             </div>
 
@@ -117,7 +117,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Quality craftsmanship</h3>
               <p className="text-gray-600 leading-relaxed">
-                Meticulous attention to detail and pride in every installation. We don't cut corners, and it shows in the results.
+                Meticulous attention to detail and pride in every installation. We don&apos;t cut corners, and it shows in the results.
               </p>
             </div>
 
@@ -156,7 +156,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Clear communication</h3>
               <p className="text-gray-600 leading-relaxed">
-                Transparent quotes, honest advice, and regular updates. You'll always know what's happening with your project.
+                Transparent quotes, honest advice, and regular updates. You&apos;ll always know what&apos;s happening with your project.
               </p>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function About() {
               Based in Kent, we cover a wide area across the South East. From small domestic projects to large commercial installations, we bring the same level of professionalism and expertise to every job.
             </p>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Not sure if we cover your area? Get in touch and we'll be happy to discuss your project.
+              Not sure if we cover your area? Get in touch and we&apos;ll be happy to discuss your project.
             </p>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function About() {
               Ready to discuss your project?
             </h2>
             <p className="text-xl md:text-2xl text-blue-50 mb-10 leading-relaxed">
-              Get in touch for a free consultation and no-obligation quote. We're here to help bring your flooring vision to life.
+              Get in touch for a free consultation and no-obligation quote. We&apos;re here to help bring your flooring vision to life.
             </p>
             <Link
               href="/contact"

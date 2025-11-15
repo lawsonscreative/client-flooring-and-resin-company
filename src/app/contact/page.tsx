@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { company } from '@/content/company';
 import ContactForm from '@/components/ContactForm';
 
@@ -10,17 +11,51 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <main id="main-content">
-      {/* Hero */}
-      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-600 to-blue-700">
-        <div className="relative z-10 container mx-auto px-6 py-20 text-center">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Get in touch
+      {/* Hero - EXACTLY MATCHING HOMEPAGE */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background with dark gray gradient */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-900/50 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900">
+            {/* Background image placeholder */}
+          </div>
+        </div>
+
+        <div className="relative z-20 container mx-auto px-6 py-24 text-center">
+          <div className="max-w-5xl mx-auto">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
+              Let&apos;s discuss<br />your project
             </h1>
-            <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-12">
               We&apos;re here for friendly, no-obligation conversations about your project. Whether you need a quick question answered or a detailed quote, we&apos;ll respond promptly.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
+                className="group inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+              >
+                Call {company.contact.phoneDisplay}
+                <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </a>
+              <a
+                href={`https://wa.me/${company.contact.whatsapp.replace(/\+/g, '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40"
+              >
+                WhatsApp us
+              </a>
+            </div>
           </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+          <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
         </div>
       </section>
 
@@ -38,8 +73,8 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Call Us */}
-            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:-translate-y-1 border border-gray-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/30">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:-translate-y-1 border border-gray-100 hover:border-blue-600">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
@@ -74,8 +109,8 @@ export default function Contact() {
             </div>
 
             {/* Social Media */}
-            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:-translate-y-1 border border-gray-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/30">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:-translate-y-1 border border-gray-100 hover:border-blue-600">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                 </svg>
@@ -121,22 +156,8 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Service Areas */}
-      <section className="py-20 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Where we work
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Based in Ashford, Kent, we primarily serve clients across Kent and the South East. For larger commercial projects, we&apos;re happy to travel further afield across the UK. Get in touch to discuss.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Form */}
-      <section className="py-20 md:py-24 bg-white">
+      <section className="py-20 md:py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
@@ -149,6 +170,53 @@ export default function Contact() {
             </div>
 
             <ContactForm />
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Where we work
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Based in Ashford, Kent, we primarily serve clients across Kent and the South East. For larger commercial projects, we&apos;re happy to travel further afield across the UK. Get in touch to discuss.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Footer - Blue gradient matching homepage */}
+      <section className="relative py-20 md:py-24 bg-gradient-to-br from-blue-600 to-blue-700 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-blue-400/20"></div>
+
+        <div className="relative z-10 container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Ready to get started?
+            </h2>
+            <p className="text-xl md:text-2xl text-blue-50 mb-10 leading-relaxed">
+              Call us now on {company.contact.phoneDisplay} or send us a message using the form above
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
+                className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+              >
+                Call {company.contact.phoneDisplay}
+                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </a>
+              <Link
+                href="/previous-work"
+                className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all duration-200 border border-white/20 hover:border-white/40"
+              >
+                View our work
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -1,11 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { company } from '@/content/company';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -16,13 +18,20 @@ export default function Header() {
     { name: 'Contact', href: '/contact' },
   ];
 
+  const isActive = (href: string) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="container-custom" aria-label="Main navigation">
         <div className="flex items-center justify-between h-20">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl md:text-2xl font-bold text-primary-700 hover:text-primary-800 transition-colors">
+            <Link href="/" className="text-xl md:text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
               {company.name.trading}
             </Link>
           </div>
@@ -33,7 +42,11 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-neutral-700 hover:text-primary-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded px-2 py-1"
+                className={`text-gray-700 hover:text-blue-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1 border-b-2 ${
+                  isActive(item.href)
+                    ? 'border-blue-600 text-blue-600'
+                    : 'border-transparent'
+                }`}
               >
                 {item.name}
               </Link>
@@ -44,7 +57,7 @@ export default function Header() {
           <div className="hidden lg:block">
             <a
               href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
-              className="flex items-center space-x-2 text-primary-700 hover:text-primary-800 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded px-2 py-1"
+              className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"
               aria-label={`Call us on ${company.contact.phoneDisplay}`}
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -58,7 +71,7 @@ export default function Header() {
           <div className="flex items-center space-x-4 lg:hidden">
             <a
               href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
-              className="text-primary-700 hover:text-primary-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded p-2"
+              className="text-blue-600 hover:text-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded p-2"
               aria-label={`Call us on ${company.contact.phoneDisplay}`}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -67,7 +80,7 @@ export default function Header() {
             </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-neutral-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded p-2"
+              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded p-2"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle mobile menu"
             >
@@ -86,13 +99,17 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-neutral-200">
+          <div className="lg:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-neutral-700 hover:text-primary-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded px-2 py-1"
+                  className={`text-gray-700 hover:text-blue-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1 border-l-4 ${
+                    isActive(item.href)
+                      ? 'border-blue-600 text-blue-600 bg-blue-50'
+                      : 'border-transparent'
+                  }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -106,7 +123,7 @@ export default function Header() {
       {/* Skip to main content link for accessibility */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-600 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 z-50"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 z-50"
       >
         Skip to main content
       </a>

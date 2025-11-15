@@ -1,0 +1,313 @@
+'use client';
+
+import { useState, FormEvent } from 'react';
+
+export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    enquiryType: 'general',
+    propertyType: '',
+    location: '',
+    areaToWork: '',
+    servicesInterested: [] as string[],
+    message: '',
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const validateForm = (): boolean => {
+    const newErrors: Record<string, string> = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'Please enter your name';
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Please provide a phone number';
+    } else if (!/^[\d\s+()-]+$/.test(formData.phone)) {
+      newErrors.phone = 'Please enter a valid phone number';
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'Please tell us about your project';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // For now, we'll simulate a submission
+      // In production, this would post to a Vercel serverless function or form service
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
+      console.log('Form data:', formData);
+
+      setSubmitStatus('success');
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        enquiryType: 'general',
+        propertyType: '',
+        location: '',
+        areaToWork: '',
+        servicesInterested: [],
+        message: '',
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleServiceToggle = (service: string) => {
+    setFormData(prev => ({
+      ...prev,
+      servicesInterested: prev.servicesInterested.includes(service)
+        ? prev.servicesInterested.filter(s => s !== service)
+        : [...prev.servicesInterested, service],
+    }));
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Name */}
+      <div>
+        <label htmlFor="name" className="block text-sm font-semibold text-neutral-700 mb-2">
+          Name <span className="text-accent-600">*</span>
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          value={formData.name}
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 ${
+            errors.name ? 'border-red-500' : 'border-neutral-300'
+          }`}
+          aria-invalid={errors.name ? 'true' : 'false'}
+          aria-describedby={errors.name ? 'name-error' : undefined}
+        />
+        {errors.name && (
+          <p id="name-error" className="mt-1 text-sm text-red-600">
+            {errors.name}
+          </p>
+        )}
+      </div>
+
+      {/* Phone */}
+      <div>
+        <label htmlFor="phone" className="block text-sm font-semibold text-neutral-700 mb-2">
+          Phone <span className="text-accent-600">*</span>
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          value={formData.phone}
+          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+          className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 ${
+            errors.phone ? 'border-red-500' : 'border-neutral-300'
+          }`}
+          aria-invalid={errors.phone ? 'true' : 'false'}
+          aria-describedby={errors.phone ? 'phone-error' : undefined}
+        />
+        {errors.phone && (
+          <p id="phone-error" className="mt-1 text-sm text-red-600">
+            {errors.phone}
+          </p>
+        )}
+      </div>
+
+      {/* Email (optional) */}
+      <div>
+        <label htmlFor="email" className="block text-sm font-semibold text-neutral-700 mb-2">
+          Email <span className="text-neutral-500 text-xs">(optional but recommended)</span>
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+        />
+      </div>
+
+      {/* Enquiry Type */}
+      <div>
+        <label htmlFor="enquiryType" className="block text-sm font-semibold text-neutral-700 mb-2">
+          Enquiry Type <span className="text-accent-600">*</span>
+        </label>
+        <select
+          id="enquiryType"
+          name="enquiryType"
+          value={formData.enquiryType}
+          onChange={(e) => setFormData({ ...formData, enquiryType: e.target.value })}
+          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+        >
+          <option value="general">General enquiry</option>
+          <option value="quote">Request a quote</option>
+        </select>
+      </div>
+
+      {/* Additional fields if requesting a quote */}
+      {formData.enquiryType === 'quote' && (
+        <>
+          {/* Property Type */}
+          <div>
+            <label htmlFor="propertyType" className="block text-sm font-semibold text-neutral-700 mb-2">
+              Property Type
+            </label>
+            <select
+              id="propertyType"
+              name="propertyType"
+              value={formData.propertyType}
+              onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
+              className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+            >
+              <option value="">Select property type</option>
+              <option value="domestic">Domestic home</option>
+              <option value="care-home">Care home</option>
+              <option value="school">School</option>
+              <option value="office">Office</option>
+              <option value="hospitality">Hospitality/Leisure</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          {/* Location */}
+          <div>
+            <label htmlFor="location" className="block text-sm font-semibold text-neutral-700 mb-2">
+              Location
+            </label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="Town/city and county"
+              value={formData.location}
+              onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+              className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+            />
+          </div>
+
+          {/* Area to Work On */}
+          <div>
+            <label htmlFor="areaToWork" className="block text-sm font-semibold text-neutral-700 mb-2">
+              Area to be worked on
+            </label>
+            <textarea
+              id="areaToWork"
+              name="areaToWork"
+              rows={2}
+              placeholder="e.g. Kitchen, 4m x 3m or Multiple classrooms, approx. 200m²"
+              value={formData.areaToWork}
+              onChange={(e) => setFormData({ ...formData, areaToWork: e.target.value })}
+              className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+            />
+          </div>
+
+          {/* Services Interested In */}
+          <div>
+            <fieldset>
+              <legend className="block text-sm font-semibold text-neutral-700 mb-2">
+                Services interested in
+              </legend>
+              <div className="space-y-2">
+                {['Carpet', 'Vinyl/LVT', 'Laminate/Engineered Wood', 'Resin flooring', 'Resin feature surfaces', 'Not sure yet'].map((service) => (
+                  <label key={service} className="flex items-center">
+                    <input
+                      type="checkbox"
+                      checked={formData.servicesInterested.includes(service)}
+                      onChange={() => handleServiceToggle(service)}
+                      className="w-4 h-4 text-primary-600 border-neutral-300 rounded focus:ring-primary-500"
+                    />
+                    <span className="ml-2 text-neutral-700">{service}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          </div>
+        </>
+      )}
+
+      {/* Message */}
+      <div>
+        <label htmlFor="message" className="block text-sm font-semibold text-neutral-700 mb-2">
+          Message <span className="text-accent-600">*</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows={5}
+          required
+          placeholder="Tell us about your project..."
+          value={formData.message}
+          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+          className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 ${
+            errors.message ? 'border-red-500' : 'border-neutral-300'
+          }`}
+          aria-invalid={errors.message ? 'true' : 'false'}
+          aria-describedby={errors.message ? 'message-error' : undefined}
+        />
+        {errors.message && (
+          <p id="message-error" className="mt-1 text-sm text-red-600">
+            {errors.message}
+          </p>
+        )}
+      </div>
+
+      {/* Submit Button */}
+      <div>
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="btn btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {isSubmitting ? 'Sending...' : 'Send Message'}
+        </button>
+      </div>
+
+      {/* Success Message */}
+      {submitStatus === 'success' && (
+        <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-green-800" role="alert">
+          <p className="font-semibold">Thank you, {formData.name || 'there'}!</p>
+          <p>Your message has been sent. We&apos;ll be in touch as soon as we can.</p>
+        </div>
+      )}
+
+      {/* Error Message */}
+      {submitStatus === 'error' && (
+        <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-800" role="alert">
+          <p className="font-semibold">Sorry, something went wrong.</p>
+          <p>Please try again or contact us directly.</p>
+        </div>
+      )}
+
+      <p className="text-sm text-neutral-600 text-center">
+        You can also send photos via WhatsApp or call us directly for an immediate response.
+      </p>
+    </form>
+  );
+}

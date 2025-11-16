@@ -17,6 +17,7 @@ export const projects: Project[] = [
     category: 'domestic',
     serviceType: 'resin',
     featured: true,
+    image: '/images/6.jpg',
     testimonial: "The resin floor they installed in our kitchen is absolutely stunning - sleek, modern, and easy to clean. We've had so many compliments already!",
   },
   {
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     category: 'school',
     serviceType: 'vinyl',
     featured: true,
+    image: '/images/7.jpg',
   },
   {
     id: 'project-3',
@@ -34,6 +36,7 @@ export const projects: Project[] = [
     category: 'care-home',
     serviceType: 'carpet',
     featured: true,
+    image: '/images/8.jpg',
     testimonial: 'The installers were tidy, respectful, and worked around our schedule. The quality is top-notch, and the whole process was stress-free.',
   },
   {
@@ -43,6 +46,7 @@ export const projects: Project[] = [
     category: 'hospitality',
     serviceType: 'resin',
     featured: true,
+    image: '/images/9.jpg',
     testimonial: 'The custom resin design is a true conversation starter. Their creativity and craftsmanship are unmatched.',
   },
   {
@@ -52,6 +56,7 @@ export const projects: Project[] = [
     category: 'commercial',
     serviceType: 'vinyl',
     featured: false,
+    image: '/images/10.jpg',
     testimonial: 'George, Katie and the team handled our office flooring with precision and care. Scheduling was seamless, communication was clear, and the final result exceeded expectations.',
   },
   {
@@ -61,5 +66,6 @@ export const projects: Project[] = [
     category: 'domestic',
     serviceType: 'laminate',
     featured: false,
+    image: '/images/11.jpg',
   },
 ];

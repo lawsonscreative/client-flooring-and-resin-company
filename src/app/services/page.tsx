@@ -11,18 +11,18 @@ export default function Services() {
   return (
     <main id="main-content">
       {/* Hero */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[75vh] md:h-[85vh] flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
 
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 py-8 text-center">
+        <div className="relative z-20 container mx-auto px-6 py-6 md:py-8 text-center">
           <div className="max-w-5xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight">
               Professional flooring<br />
               for every space
             </h1>
-            <p className="text-lg md:text-xl text-gray-100 mb-6 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
               From traditional carpet and vinyl to innovative resin surfaces, we deliver solutions that transform spaces.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">

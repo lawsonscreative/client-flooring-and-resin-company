@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { company } from '@/content/company';
 import ContactForm from '@/components/ContactForm';
 
@@ -16,9 +17,14 @@ export default function Contact() {
         {/* Background with dark gray gradient */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-900/50 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900">
-            {/* Background image placeholder */}
-          </div>
+          <Image
+            src="/images/5.jpg"
+            alt="Contact The Flooring and Resin Company - serving Kent and South East England"
+            fill
+            className="object-cover"
+            priority
+            quality={85}
+          />
         </div>
 
         <div className="relative z-20 container mx-auto px-6 py-24 text-center">

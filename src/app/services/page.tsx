@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -14,17 +15,14 @@ export default function Services() {
         {/* Background with dark overlay - SAME AS HOMEPAGE */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-900/50 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-gray-600">
-                <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-                <p className="text-sm">Background image placeholder</p>
-                <p className="text-xs mt-1">Add flooring photography here</p>
-              </div>
-            </div>
-          </div>
+          <Image
+            src="/images/2.jpg"
+            alt="Professional flooring services across Kent - carpet, vinyl, laminate, and resin installations"
+            fill
+            className="object-cover"
+            priority
+            quality={85}
+          />
         </div>
 
         {/* Hero Content */}
@@ -326,10 +324,10 @@ export default function Services() {
                 Request a Quote
               </Link>
               <a
-                href="tel:01233123456"
+                href="tel:07974911629"
                 className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Call: 01233 123456
+                Call: 07974 911629
               </a>
             </div>
           </div>

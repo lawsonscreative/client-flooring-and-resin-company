@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { projects, Project } from '@/content/projects';
 import ProjectCard from '@/components/ProjectCard';
 
@@ -22,9 +23,14 @@ export default function PreviousWork() {
         {/* Background with dark gray gradient */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-900/50 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900">
-            {/* Background image placeholder */}
-          </div>
+          <Image
+            src="/images/4.jpg"
+            alt="Portfolio of flooring projects across Kent - domestic and commercial installations"
+            fill
+            className="object-cover"
+            priority
+            quality={85}
+          />
         </div>
 
         <div className="relative z-20 container mx-auto px-6 py-24 text-center">

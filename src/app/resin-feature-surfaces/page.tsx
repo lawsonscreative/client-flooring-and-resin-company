@@ -11,9 +11,14 @@ export default function ResinFeatureSurfaces() {
         {/* Background with dark gray gradient */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-900/50 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900">
-            {/* Background image placeholder */}
-          </div>
+          <Image
+            src="/images/6.jpg"
+            alt="Bespoke resin flooring and feature walls - seamless, durable, artistic surfaces"
+            fill
+            className="object-cover"
+            priority
+            quality={85}
+          />
         </div>
 
         <div className="relative z-20 container mx-auto px-6 py-24 text-center">

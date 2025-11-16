@@ -10,42 +10,42 @@ export default function Home() {
   return (
     <main id="main-content">
       {/* Modern Hero Section - Full Screen */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen max-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
 
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 py-24 text-center">
+        <div className="relative z-20 container mx-auto px-6 py-16 text-center">
           <div className="max-w-5xl mx-auto">
             {/* Headline */}
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Crafted through generations.<br />
               Designed for today.
             </h1>
 
             {/* Subheading */}
-            <p className="text-xl md:text-2xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed">
               Family-run flooring and resin specialists with over 50 years of experience. From homes to hospitals, we create surfaces that inspire.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Link
                 href="/contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
                 Request a Quote
               </Link>
               <Link
                 href="/previous-work"
-                className="bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200"
+                className="bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200"
               >
                 View Our Work
               </Link>
             </div>
 
             {/* Trust Signals */}
-            <div className="mt-16 flex flex-wrap justify-center gap-12 text-white">
+            <div className="mt-8 flex flex-wrap justify-center gap-6 md:gap-12 text-white">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

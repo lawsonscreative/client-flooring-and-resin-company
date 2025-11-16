@@ -305,6 +305,143 @@ export default function Services() {
         </div>
       </section>
 
+      {/* What Happens Next Process */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              What happens next?
+            </h2>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Our simple, transparent process from first contact to finished floor
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {/* Step 1 */}
+            <div className="relative">
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                  1
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Get in Touch</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Call, WhatsApp, or use our contact form. Tell us about your project, and we&apos;ll arrange a convenient time to discuss.
+                </p>
+                <p className="text-sm text-blue-600 font-semibold">
+                  Usually same day response
+                </p>
+              </div>
+              {/* Connector Arrow - Hidden on mobile */}
+              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-blue-300">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative">
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                  2
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Free Consultation</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  We visit your site to assess the space, discuss your requirements, and provide honest advice on the best solution.
+                </p>
+                <p className="text-sm text-blue-600 font-semibold">
+                  No obligation, no pressure
+                </p>
+              </div>
+              {/* Connector Arrow */}
+              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-blue-300">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative">
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                  3
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Detailed Quote</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  We provide a clear, itemized quote with no hidden costs. We can supply materials or fit your own - whatever works best for you.
+                </p>
+                <p className="text-sm text-blue-600 font-semibold">
+                  Transparent pricing
+                </p>
+              </div>
+              {/* Connector Arrow */}
+              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-blue-300">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Step 4 */}
+            <div>
+              <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold border border-white/30">
+                  4
+                </div>
+                <h3 className="text-xl font-bold mb-3">Expert Installation</h3>
+                <p className="text-blue-50 leading-relaxed mb-4">
+                  We arrive on time, work efficiently, and leave your space clean and ready to use. Quality installation, every time.
+                </p>
+                <p className="text-sm text-white font-semibold">
+                  Professional finish guaranteed
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Info Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12">
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-green-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Fully Insured</h4>
+                  <p className="text-sm text-gray-600">Public Liability Insurance on all projects</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-green-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Flexible Scheduling</h4>
+                  <p className="text-sm text-gray-600">We work around your timetable, including weekends</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-green-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Clear Communication</h4>
+                  <p className="text-sm text-gray-600">Regular updates throughout your project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section - SAME AS HOMEPAGE */}
       <section className="py-20 md:py-24 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-6">

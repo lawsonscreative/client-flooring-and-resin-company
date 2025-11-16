@@ -322,37 +322,56 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             {/* Commercial & Hospitality Clients */}
             <div className="mb-12">
-              <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
-                {commercialClients.map((client, index) => (
-                  <div key={client.name} className="flex items-center">
-                    <span className="text-gray-500 text-lg font-medium hover:text-blue-600 transition-colors duration-200">
-                      {client.name}
-                    </span>
-                    {index < commercialClients.length - 1 && (
-                      <span className="ml-12 text-gray-300">•</span>
-                    )}
+              <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8">
+                Commercial & Hospitality
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {commercialClients.map((client) => (
+                  <div
+                    key={client.name}
+                    className="group bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-blue-600 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center"
+                  >
+                    <div className="text-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 mx-auto shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                      </div>
+                      <p className="text-gray-700 font-semibold text-sm group-hover:text-blue-600 transition-colors">
+                        {client.name}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Divider */}
-            <div className="border-t border-gray-200 my-12"></div>
-
             {/* Education Clients */}
             <div>
-              <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
-                {educationClients.map((client, index) => (
-                  <div key={client.name} className="flex items-center">
-                    <span className="text-gray-500 text-lg font-medium hover:text-blue-600 transition-colors duration-200">
-                      {client.name}
-                    </span>
-                    {index < educationClients.length - 1 && (
-                      <span className="ml-12 text-gray-300">•</span>
-                    )}
+              <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8">
+                Education
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {educationClients.map((client) => (
+                  <div
+                    key={client.name}
+                    className="group bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-blue-600 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center"
+                  >
+                    <div className="text-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 mx-auto shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                        </svg>
+                      </div>
+                      <p className="text-gray-700 font-semibold text-sm group-hover:text-blue-600 transition-colors">
+                        {client.name}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>

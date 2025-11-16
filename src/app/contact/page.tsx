@@ -15,7 +15,7 @@ export default function Contact() {
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
 
         <div className="relative z-20 container mx-auto px-6 py-24 text-center">
           <div className="max-w-5xl mx-auto">

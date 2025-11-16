@@ -18,7 +18,7 @@ export default function Services() {
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto px-6 py-6 md:py-8 text-center">
           <div className="max-w-5xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4 leading-tight">
               Professional flooring<br />
               for every space
             </h1>

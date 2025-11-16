@@ -22,7 +22,7 @@ export default function Contact() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4 leading-tight">
               Let&apos;s discuss<br />your project
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-12">
+            <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
               We&apos;re here for friendly, no-obligation conversations about your project. Whether you need a quick question answered or a detailed quote, we&apos;ll respond promptly.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">

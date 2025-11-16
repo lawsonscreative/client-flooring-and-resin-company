@@ -28,7 +28,7 @@ export default function PreviousWork() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-4 leading-tight">
               Projects we&apos;re<br />proud of
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-12">
+            <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
               A selection of our work across domestic and commercial spaces
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">

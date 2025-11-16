@@ -14,7 +14,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-neutral-900 text-neutral-300">
+    <footer className="bg-neutral-900 text-neutral-300 pb-20 lg:pb-0">
       <div className="container-custom py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Column 1: Company Info */}

@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import MobileStickyContactBar from '@/components/MobileStickyContactBar';
 import StructuredData from '@/components/StructuredData';
 import { company } from '@/content/company';
 
@@ -46,6 +47,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <MobileStickyContactBar />
       </body>
     </html>
   );

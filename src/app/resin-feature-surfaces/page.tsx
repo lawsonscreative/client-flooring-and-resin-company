@@ -37,19 +37,19 @@ export default function ResinFeatureSurfaces() {
   return (
     <main id="main-content">
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
 
-        <div className="relative z-20 container mx-auto px-6 py-24 text-center">
+        <div className="relative z-20 container mx-auto px-6 py-8 text-center">
           <div className="max-w-5xl mx-auto">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
               Stunning resin<br />feature surfaces
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-12">
               Transform your space with bespoke resin flooring and feature walls that combine artistry with durability
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/contact"
                 className="group inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
@@ -78,7 +78,7 @@ export default function ResinFeatureSurfaces() {
       </section>
 
       {/* What is Resin Flooring */}
-      <section className="py-20 md:py-24 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -133,7 +133,7 @@ export default function ResinFeatureSurfaces() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-20 md:py-24 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -172,7 +172,7 @@ export default function ResinFeatureSurfaces() {
       </section>
 
       {/* Applications Section */}
-      <section className="py-20 md:py-24 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -232,7 +232,7 @@ export default function ResinFeatureSurfaces() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 md:py-24 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -292,7 +292,7 @@ export default function ResinFeatureSurfaces() {
       </section>
 
       {/* CTA Footer - Blue gradient matching homepage */}
-      <section className="relative py-20 md:py-24 bg-gradient-to-br from-blue-600 to-blue-700 text-white overflow-hidden">
+      <section className="relative py-12 bg-gradient-to-br from-blue-600 to-blue-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-blue-400/20"></div>
 
         <div className="relative z-10 container mx-auto px-6">

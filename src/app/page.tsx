@@ -10,26 +10,26 @@ export default function Home() {
   return (
     <main id="main-content">
       {/* Modern Hero Section - Full Screen */}
-      <section className="relative h-screen max-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
 
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 py-16 text-center">
+        <div className="relative z-20 container mx-auto px-6 py-8 text-center">
           <div className="max-w-5xl mx-auto">
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
               Crafted through generations.<br />
               Designed for today.
             </h1>
 
             {/* Subheading */}
-            <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-100 mb-6 max-w-3xl mx-auto leading-relaxed">
               Family-run flooring and resin specialists with over 50 years of experience. From homes to hospitals, we create surfaces that inspire.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-8">
               <Link
                 href="/contact"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
@@ -94,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* Services Overview Section */}
-      <section className="py-20 md:py-24 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -205,7 +205,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 md:py-24 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -301,7 +301,7 @@ export default function Home() {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-20 md:py-24 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -371,7 +371,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 md:py-24 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
+      <section className="py-12 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">

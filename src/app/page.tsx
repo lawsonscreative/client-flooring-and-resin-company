@@ -1,35 +1,31 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { company } from '@/content/company';
-import { clients } from '@/content/clients';
 
 export default function Home() {
-  const commercialClients = clients.filter(c => c.category === 'commercial' || c.category === 'hospitality').slice(0, 4);
-  const educationClients = clients.filter(c => c.category === 'education').slice(0, 4);
-
   return (
     <main id="main-content">
       {/* Modern Hero Section - Full Screen */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[75vh] md:h-[85vh] flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
 
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 py-8 text-center">
+        <div className="relative z-20 container mx-auto px-6 py-6 md:py-8 text-center">
           <div className="max-w-5xl mx-auto">
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight">
               Crafted through generations.<br />
               Designed for today.
             </h1>
 
             {/* Subheading */}
-            <p className="text-lg md:text-xl text-gray-100 mb-6 max-w-3xl mx-auto leading-relaxed">
-              Family-run flooring and resin specialists with over 50 years of experience. From homes to hospitals, we create surfaces that inspire.
+            <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
+              Family-run flooring and resin specialists with over 50 years&apos; experience fitting flooring in commercial sites, homes and care homes. Durable finishes, minimal disruption, guaranteed workmanship.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6 md:mb-8">
               <Link
                 href="/contact"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
@@ -45,40 +41,40 @@ export default function Home() {
             </div>
 
             {/* Trust Signals */}
-            <div className="mt-8 flex flex-wrap justify-center gap-6 md:gap-12 text-white">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-12 text-white text-sm md:text-base">
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div className="text-left">
-                  <div className="font-bold text-lg">50+ Years</div>
-                  <div className="text-sm text-gray-300">Experience</div>
+                  <div className="font-bold text-sm md:text-base lg:text-lg">50+ Years</div>
+                  <div className="text-xs md:text-sm text-gray-300">Experience</div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
                 <div className="text-left">
-                  <div className="font-bold text-lg">Fully Insured</div>
-                  <div className="text-sm text-gray-300">Public Liability</div>
+                  <div className="font-bold text-sm md:text-base lg:text-lg">Fully Insured</div>
+                  <div className="text-xs md:text-sm text-gray-300">Public Liability</div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
                 <div className="text-left">
-                  <div className="font-bold text-lg">Family Run</div>
-                  <div className="text-sm text-gray-300">Personal Service</div>
+                  <div className="font-bold text-sm md:text-base lg:text-lg">Family Run</div>
+                  <div className="text-xs md:text-sm text-gray-300">Personal Service</div>
                 </div>
               </div>
             </div>
@@ -120,7 +116,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Carpet</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Contract carpets and carpet tiles with commercial-grade durability, perfect for care homes, hospitality, and domestic spaces.
+                Contract carpets built to last in high-traffic rooms which means easy maintenance. Ideal for care homes and hospitality.
               </p>
               <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
                 Learn more
@@ -142,7 +138,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Vinyl</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Loose-lay LVT, sheet vinyl, and cap-and-cove installations. Hygienic, easy to clean, ideal for healthcare and wet rooms.
+                Hygienic, loose-lay tile and sheet vinyl that&apos;s simple to clean. Ideal for healthcare and wet rooms.
               </p>
               <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
                 Learn more
@@ -164,7 +160,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Laminate & Wood</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Engineered wood flooring and solid wood laminate combining durability with natural aesthetic appeal.
+                Engineered and solid wood laminate flooring which is durable, and commercial-grade with the natural aesthetic of real wood. Ideal for offices, retail spaces, and family homes where style and strength matters.
               </p>
               <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
                 Learn more
@@ -191,7 +187,7 @@ export default function Home() {
               </div>
               <h3 className="relative text-2xl font-bold text-white mb-4">Resin & Feature Surfaces</h3>
               <p className="relative text-blue-50 mb-6 leading-relaxed">
-                Unique, durable resin finishes for floors, worktops, walls, and decorative pieces. Where creativity meets performance.
+                Bespoke resin floors, worktops and walls which are seamless, decorative, and resilient for heavy use. Ideal for commercial kitchens and feature interiors where design and durability count.
               </p>
               <Link href="/resin-feature-surfaces" className="relative text-white font-semibold hover:text-blue-100 inline-flex items-center group/link">
                 Explore resin services
@@ -295,76 +291,6 @@ export default function Home() {
               <p className="text-gray-600 leading-relaxed">
                 Public Liability Insurance for your complete peace of mind on every domestic and commercial project.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trusted By Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Trusted by leading organisations
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From schools to care homes, restaurants to corporate offices across Kent and the South East
-            </p>
-          </div>
-
-          <div className="max-w-7xl mx-auto">
-            {/* Commercial & Hospitality Clients */}
-            <div className="mb-12">
-              <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8">
-                Commercial & Hospitality
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {commercialClients.map((client) => (
-                  <div
-                    key={client.name}
-                    className="group bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-blue-600 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center"
-                  >
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 mx-auto shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                        </svg>
-                      </div>
-                      <p className="text-gray-700 font-semibold text-sm group-hover:text-blue-600 transition-colors">
-                        {client.name}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Education Clients */}
-            <div>
-              <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8">
-                Education
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {educationClients.map((client) => (
-                  <div
-                    key={client.name}
-                    className="group bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-blue-600 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center"
-                  >
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 mx-auto shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                        </svg>
-                      </div>
-                      <p className="text-gray-700 font-semibold text-sm group-hover:text-blue-600 transition-colors">
-                        {client.name}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

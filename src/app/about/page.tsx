@@ -59,10 +59,10 @@ export default function About() {
               Our story
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              The Flooring and Resin Company is a family-run business based in Kent, dedicated to delivering exceptional flooring solutions across domestic and commercial spaces.
+              The Flooring and Resin Company is a family-run business based in Kent, delivering durable, high-quality flooring solutions for both domestic and commercial spaces across the country.
             </p>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Led by George and Katie, our team combines years of hands-on experience with a genuine passion for quality craftsmanship. We believe every project deserves attention to detail, professional service, and results that exceed expectations.
+              Led by George and Katie, father and daughter, we combine decades of hands-on experience with a genuine passion for craftsmanship. Every project receives attention to detail, a professional service, and results that stand the test of time.
             </p>
           </div>
         </div>

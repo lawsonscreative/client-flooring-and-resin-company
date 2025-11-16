@@ -1,7 +1,11 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us | Family-Run Flooring Specialists',
+  description: 'Family-run flooring business based in Ashford, Kent with over 50 years of experience. Personal service from George and Katie covering Kent and the South East for domestic and commercial projects.',
+};
 
 export default function About() {
   return (

@@ -29,16 +29,16 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="container-custom" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-44 md:h-52">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
               <Image
                 src="/images/logo.png"
                 alt="The Flooring and Resin Company logo"
-                width={180}
-                height={50}
-                className="h-10 md:h-12 w-auto"
+                width={720}
+                height={200}
+                className="h-40 md:h-48 w-auto"
                 priority
               />
             </Link>

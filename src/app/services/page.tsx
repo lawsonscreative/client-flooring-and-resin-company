@@ -10,20 +10,10 @@ export const metadata: Metadata = {
 export default function Services() {
   return (
     <main id="main-content">
-      {/* Hero - EXACTLY like Homepage */}
+      {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with dark overlay - SAME AS HOMEPAGE */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-900/50 z-10" />
-          <Image
-            src="/images/2.jpg"
-            alt="Professional flooring services across Kent - carpet, vinyl, laminate, and resin installations"
-            fill
-            className="object-cover"
-            priority
-            quality={85}
-          />
-        </div>
+        {/* Background Gradient */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800" />
 
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto px-6 py-24 text-center">

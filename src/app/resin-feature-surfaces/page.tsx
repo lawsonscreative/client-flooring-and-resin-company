@@ -36,20 +36,10 @@ export default function ResinFeatureSurfaces() {
 
   return (
     <main id="main-content">
-      {/* Hero - EXACTLY MATCHING HOMEPAGE */}
+      {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with dark gray gradient */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-900/50 z-10" />
-          <Image
-            src="/images/6.jpg"
-            alt="Bespoke resin flooring and feature walls - seamless, durable, artistic surfaces"
-            fill
-            className="object-cover"
-            priority
-            quality={85}
-          />
-        </div>
+        {/* Background Gradient */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-600 via-purple-600 to-purple-700" />
 
         <div className="relative z-20 container mx-auto px-6 py-24 text-center">
           <div className="max-w-5xl mx-auto">

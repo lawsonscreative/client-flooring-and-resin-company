@@ -9,20 +9,10 @@ export default function Home() {
 
   return (
     <main id="main-content">
-      {/* Modern Hero Section - Full Screen with Background Image */}
+      {/* Modern Hero Section - Full Screen */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 to-gray-900/50 z-10" />
-          <Image
-            src="/images/1.jpg"
-            alt="Professional resin flooring installation showcasing seamless, durable finish"
-            fill
-            className="object-cover"
-            priority
-            quality={85}
-          />
-        </div>
+        {/* Background Gradient */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800" />
 
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto px-6 py-24 text-center">

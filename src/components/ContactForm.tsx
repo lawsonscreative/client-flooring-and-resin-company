@@ -305,9 +305,18 @@ export default function ContactForm() {
         </div>
       )}
 
-      <p className="text-sm text-neutral-600 text-center">
-        You can also send photos via WhatsApp or call us directly for an immediate response.
-      </p>
+      {/* Reassurance Text */}
+      <div className="text-center space-y-2 pt-4 border-t border-gray-200">
+        <p className="text-sm text-gray-600">
+          <strong>We typically reply within 24 hours</strong> (often much sooner!)
+        </p>
+        <p className="text-sm text-gray-600">
+          We&apos;ll never share your details. View our <a href="/privacy" className="text-blue-600 hover:text-blue-700 underline">Privacy Policy</a>
+        </p>
+        <p className="text-sm text-neutral-600">
+          You can also send photos via WhatsApp or call us directly for an immediate response.
+        </p>
+      </div>
     </form>
   );
 }

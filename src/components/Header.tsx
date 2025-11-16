@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { company } from '@/content/company';
@@ -31,8 +32,15 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl md:text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
-              {company.name.trading}
+            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <Image
+                src="/images/logo.png"
+                alt="The Flooring and Resin Company logo"
+                width={180}
+                height={50}
+                className="h-10 md:h-12 w-auto"
+                priority
+              />
             </Link>
           </div>
 

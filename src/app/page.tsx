@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main id="main-content">
       {/* Modern Hero Section */}
-      <section className="relative pt-20 pb-16 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="relative pt-12 pb-8 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
 
             {/* Scroll Down Indicator - Desktop */}
-            <div className="hidden lg:block mt-16 animate-bounce">
+            <div className="hidden lg:block mt-8 animate-bounce">
               <svg className="w-6 h-6 text-white/60 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" aria-label="Scroll down">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
@@ -108,7 +108,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              From traditional flooring to <Link href="/resin-feature-surfaces" className="text-blue-600 hover:text-blue-700 underline decoration-2 underline-offset-4">artistic resin surfaces</Link>
+              From traditional flooring to <Link href="/resin-feature-surfaces" className="text-gray-900 hover:text-blue-600 transition-colors">artistic resin surfaces</Link>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               We offer a comprehensive range of flooring solutions for both domestic and commercial projects

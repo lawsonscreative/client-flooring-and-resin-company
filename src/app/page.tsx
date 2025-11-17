@@ -25,7 +25,7 @@ export default function Home() {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
-              Family-run, fully insured flooring and resin company with over 50 years&apos; experience in homes, care homes, schools and commercial spaces. We create hard-wearing, low-maintenance floors and one-off resin features – fitted with minimal disruption and guaranteed workmanship.
+              Family-run, fully insured flooring and resin specialists with over 50 years&apos; experience fitting carpet, vinyl, laminate and bespoke resin surfaces in homes, care settings, schools and commercial spaces. Durable finishes, minimal disruption, guaranteed workmanship.
             </p>
 
             {/* CTA Buttons */}
@@ -125,7 +125,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Carpet</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Contract carpets built to last in high-traffic rooms, with easy-clean finishes ideal for care homes, hospitality and busy family spaces.
+                Contract carpets built to last in high-traffic rooms and easy to maintain. Ideal for care homes and hospitality.
               </p>
               <Link href="/contact?service=carpet" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
                 Get a quote
@@ -169,7 +169,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Laminate & Wood</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Engineered and solid wood laminate flooring that combines the warmth of real wood with commercial-grade durability – perfect for offices, retail and family homes.
+                Engineered and solid wood laminate flooring that combines commercial-grade durability with the natural look of real wood. Ideal for offices, retail spaces and family homes where style and strength matter.
               </p>
               <Link href="/contact?service=laminate" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
                 Get a quote
@@ -196,7 +196,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & Feature Surfaces</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Bespoke resin floors, walls and worktops that blend art and practicality. From subtle finishes to bold statement pieces.
+                Bespoke resin floors, walls and worktops that blend art with practicality. From subtle finishes to bold statement pieces.
               </p>
               <Link href="/resin-feature-surfaces" className="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center group/link">
                 Explore resin surfaces
@@ -311,11 +311,8 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              What our customers say
+              What our clients say
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Don&apos;t just take our word for it
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -329,10 +326,10 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed italic">
-                &ldquo;George and Katie transformed our care home corridors with slip-resistant vinyl. Professional, tidy, and worked around our residents perfectly.&rdquo;
+                &ldquo;The resin floor they installed in our kitchen is absolutely stunning and so easy to keep clean. George and Katie were professional throughout, and the whole process was far less disruptive than we&apos;d expected.&rdquo;
               </p>
-              <p className="text-gray-900 font-semibold">Care Home Manager</p>
-              <p className="text-gray-600 text-sm">Ashford</p>
+              <p className="text-gray-900 font-semibold">Homeowner</p>
+              <p className="text-gray-600 text-sm">Canterbury</p>
             </div>
 
             {/* Testimonial 2 */}
@@ -345,10 +342,10 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed italic">
-                &ldquo;The resin floor in our kitchen is stunning and so easy to keep clean. Exactly what we wanted.&rdquo;
+                &ldquo;George, Katie and the team handled our office flooring with precision and care. Scheduling was seamless, communication was clear, and the final result exceeded expectations.&rdquo;
               </p>
-              <p className="text-gray-900 font-semibold">Homeowner</p>
-              <p className="text-gray-600 text-sm">Canterbury</p>
+              <p className="text-gray-900 font-semibold">Commercial office</p>
+              <p className="text-gray-600 text-sm">Kent</p>
             </div>
 
             {/* Testimonial 3 */}
@@ -361,10 +358,10 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed italic">
-                &ldquo;Quick, efficient, and the laminate flooring still looks perfect two years later in our busy office.&rdquo;
+                &ldquo;We needed new vinyl throughout our care home corridors, and the team worked around our residents perfectly. Professional, tidy, and the flooring is wearing beautifully.&rdquo;
               </p>
-              <p className="text-gray-900 font-semibold">Office Manager</p>
-              <p className="text-gray-600 text-sm">Maidstone</p>
+              <p className="text-gray-900 font-semibold">Care home manager</p>
+              <p className="text-gray-600 text-sm">Ashford</p>
             </div>
           </div>
         </div>
@@ -386,7 +383,7 @@ export default function Home() {
                 href="/contact"
                 className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
-                Request a Quote
+                Get a free, no-obligation quote
               </Link>
               <a
                 href={`tel:${company.contact.phone.replace(/\s/g, '')}`}

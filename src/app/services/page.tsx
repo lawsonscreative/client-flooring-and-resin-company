@@ -367,8 +367,65 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Why Choose Section - SAME LAYOUT AS HOMEPAGE */}
+      {/* How our installations work */}
       <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              How our installations work
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {/* Step 1 */}
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                1
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Survey & advice</h3>
+              <p className="text-gray-600 leading-relaxed">
+                We visit your property, assess the subfloor and discuss how the space is used.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                2
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Clear quote</h3>
+              <p className="text-gray-600 leading-relaxed">
+                You&apos;ll receive an itemised quote, so you can see exactly what&apos;s included.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                3
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Scheduled around you</h3>
+              <p className="text-gray-600 leading-relaxed">
+                For schools and care homes we often work evenings, weekends or holidays to minimise disruption.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                4
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Tidy, respectful fitters</h3>
+              <p className="text-gray-600 leading-relaxed">
+                We protect surrounding areas, keep noise to a minimum and clean up thoroughly when we&apos;re done.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Section - SAME LAYOUT AS HOMEPAGE */}
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -564,102 +621,73 @@ export default function Services() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Frequently Asked Questions
+              Frequently asked questions
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Common questions about our flooring services, answered
-            </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
             {/* FAQ 1 */}
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
-                <span>Do I need to move furniture before the flooring installation?</span>
+                <span>How much disruption will there be?</span>
                 <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p>We can help move light furniture as part of the installation. For larger items or if you prefer, you can arrange furniture removal beforehand. We&apos;ll discuss this during your consultation and provide guidance on what needs to be cleared.</p>
+                <p>Most flooring installations are completed in 1-3 days for domestic spaces. We protect surrounding areas, work cleanly and remove all waste. For care homes and schools, we can schedule work during quieter periods or out of hours to minimise impact on residents and students.</p>
               </div>
             </details>
 
             {/* FAQ 2 */}
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
-                <span>What floor preparation is required before installation?</span>
+                <span>Do you move furniture?</span>
                 <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p>We handle all necessary floor preparation, including removing existing flooring (if needed), levelling subfloors, and ensuring proper surface conditions. Any additional preparation work required will be discussed and quoted during the consultation phase.</p>
+                <p>We can move smaller furniture items as part of the installation. For larger or valuable items, we recommend arranging separate removal or we can work room by room if that helps.</p>
               </div>
             </details>
 
             {/* FAQ 3 */}
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
-                <span>How long does a typical flooring installation take?</span>
+                <span>How long do installations usually take?</span>
                 <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p>Most residential rooms take 1-2 days. Larger homes or commercial spaces may take 3-5 days. Resin installations typically take 1-3 days depending on the area size. We&apos;ll provide a detailed timeline during the quotation process.</p>
+                <p>Residential rooms: 1-2 days. Commercial spaces: 3-5 days depending on size. Resin installations: 2-3 days including curing time. We&apos;ll give you an accurate timeline when we quote.</p>
               </div>
             </details>
 
             {/* FAQ 4 */}
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
-                <span>Are you insured for commercial and domestic work?</span>
+                <span>How do I care for my new floor?</span>
                 <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p>Yes, we carry full Public Liability Insurance for both domestic and commercial projects. This covers all our work and gives you complete peace of mind throughout the installation process.</p>
+                <p>We provide care instructions for every installation. Most flooring needs simple regular vacuuming/mopping. Resin surfaces are especially low-maintenance – just mop with warm water and standard cleaning products.</p>
               </div>
             </details>
 
             {/* FAQ 5 */}
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
-                <span>Can you supply the flooring materials or do I need to source them?</span>
+                <span>What guarantees do you offer?</span>
                 <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p>We offer both options. We can supply and install materials (including helping you choose the right products), or we can fit materials you&apos;ve purchased yourself. Our quotes clearly separate supply and installation costs for complete transparency.</p>
-              </div>
-            </details>
-
-            {/* FAQ 6 */}
-            <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
-                <span>Do you work evenings and weekends to minimize disruption?</span>
-                <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p>Yes, we offer flexible scheduling including evenings and weekends. This is particularly useful for commercial clients who need work completed outside business hours, or for busy households. We&apos;ll work around your schedule to minimize disruption.</p>
-              </div>
-            </details>
-
-            {/* FAQ 7 */}
-            <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
-                <span>What&apos;s included in the uplift and disposal of old flooring?</span>
-                <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p>We can remove and dispose of your existing flooring as part of the service. This includes carpet, vinyl, laminate, and tiles. The cost for uplift and disposal will be clearly itemized in your quote, and we ensure all waste is disposed of responsibly.</p>
+                <p>All our work is guaranteed. We&apos;re fully insured and use quality materials from trusted suppliers. If there&apos;s ever an issue with our workmanship, we&apos;ll put it right.</p>
               </div>
             </details>
           </div>

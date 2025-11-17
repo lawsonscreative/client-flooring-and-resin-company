@@ -100,8 +100,11 @@ export default function About() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Our story
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed mb-6">
               The Flooring and Resin Company is run by father-and-daughter team George and Katie Spittle. George has been fitting floors since the 1970s; Katie looks after customers and keeps every project running smoothly. Together, they bring old-school craftsmanship and modern materials to homes, care settings and commercial spaces across Kent.
+            </p>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              George has been fitting floors since the 1970s, starting out in traditional carpet and vinyl before expanding into laminate, wood and, more recently, bespoke resin surfaces. Today, The Flooring and Resin Company brings that depth of experience to homes, care settings, schools and commercial spaces across Kent and the South East.
             </p>
           </div>
         </div>

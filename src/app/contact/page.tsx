@@ -211,8 +211,54 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Service Areas */}
+      {/* What happens next */}
       <section className="py-12 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+              What happens next
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Step 1 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                  1
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Review & clarify</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We&apos;ll review your message and, if needed, give you a quick call for any clarifications.
+                </p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                  2
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Site visit</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We&apos;ll arrange a convenient time to visit (for quotes that need a site survey).
+                </p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+                  3
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Your quote</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  You&apos;ll receive a clear, itemised quote – no obligation and no hard sell.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

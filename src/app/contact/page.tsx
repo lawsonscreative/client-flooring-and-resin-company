@@ -89,7 +89,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {/* Call Us */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:-translate-y-1 border border-gray-100 hover:border-blue-600">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
@@ -100,11 +100,28 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Call us</h3>
               <a
                 href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
-                className="text-2xl font-bold text-blue-600 hover:text-blue-700 block mb-3 transition-colors"
+                className="text-xl font-bold text-blue-600 hover:text-blue-700 block mb-3 transition-colors"
               >
                 {company.contact.phoneDisplay}
               </a>
               <p className="text-gray-600">Available during business hours</p>
+            </div>
+
+            {/* Email */}
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:-translate-y-1 border border-gray-100 hover:border-blue-600">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Email us</h3>
+              <a
+                href={`mailto:${company.contact.email}`}
+                className="text-lg font-bold text-blue-600 hover:text-blue-700 block mb-3 transition-colors break-all"
+              >
+                {company.contact.email}
+              </a>
+              <p className="text-gray-600">We&apos;ll respond within 24 hours</p>
             </div>
 
             {/* WhatsApp */}

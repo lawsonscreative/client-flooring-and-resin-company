@@ -9,6 +9,7 @@ export const company = {
     phoneDisplay: '07974 911629',
     whatsapp: '+447933030318',
     whatsappDisplay: '+44 7933 030318',
+    email: 'info@tfrco.co.uk',
   },
   address: {
     street: 'Henwood House, Henwood',

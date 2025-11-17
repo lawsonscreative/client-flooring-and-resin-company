@@ -51,11 +51,17 @@ export default function ContactForm() {
     setSubmitStatus('idle');
 
     try {
-      // For now, we'll simulate a submission
-      // In production, this would post to a Vercel serverless function or form service
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-      console.log('Form data:', formData);
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
 
       setSubmitStatus('success');
       setFormData({

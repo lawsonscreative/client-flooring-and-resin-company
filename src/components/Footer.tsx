@@ -62,6 +62,15 @@ export default function Footer() {
                 </a>
               </div>
               <div>
+                <p className="font-semibold text-white mb-1">Email</p>
+                <a
+                  href={`mailto:${company.contact.email}`}
+                  className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
+                >
+                  {company.contact.email}
+                </a>
+              </div>
+              <div>
                 <p className="font-semibold text-white mb-1">WhatsApp</p>
                 <a
                   href={`https://wa.me/${company.contact.whatsapp.replace(/\+/g, '')}`}

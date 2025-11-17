@@ -186,7 +186,7 @@ export default function Contact() {
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Contact & Quote Request Form
+                Contact and Quote Request Form
               </h2>
               <p className="text-xl text-gray-600 mb-4">
                 Fill in the form below and we&apos;ll get back to you as soon as possible

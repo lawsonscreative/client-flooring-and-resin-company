@@ -4,51 +4,30 @@ export default function StructuredData() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://www.theflooringandresincompany.co.uk/#organization',
-    name: company.name.legal,
-    alternateName: company.name.trading,
-    description: 'Family-run flooring and resin specialists with over 50 years of experience. Professional carpet, vinyl, laminate, and resin installations across Kent and the South East.',
-    image: 'https://www.theflooringandresincompany.co.uk/images/1.jpg',
-    logo: 'https://www.theflooringandresincompany.co.uk/images/1.jpg',
+    '@id': 'https://www.tfrco.co.uk',
+    name: 'The Flooring and Resin Company',
+    alternateName: 'TFRCO',
+    description: 'Family-run flooring and resin specialists with over 50 years\' experience in Ashford, Kent. Professional installation for homes, care settings, schools and commercial spaces.',
+    url: 'https://www.tfrco.co.uk',
+    telephone: '+447974911629',
+    email: 'info@tfrco.co.uk',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: company.address.street,
-      addressLocality: company.address.city,
-      addressRegion: company.address.county,
-      postalCode: company.address.postcode,
+      streetAddress: 'Henwood House',
+      addressLocality: 'Ashford',
+      addressRegion: 'Kent',
+      postalCode: 'TN24 8DH',
       addressCountry: 'GB',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 51.1481,
-      longitude: 0.8730,
+      latitude: '51.1465',
+      longitude: '0.8746',
     },
-    telephone: company.contact.phone,
-    email: 'info@theflooringandresincompany.co.uk',
     areaServed: [
       {
         '@type': 'City',
         name: 'Ashford',
-        containedInPlace: {
-          '@type': 'AdministrativeArea',
-          name: 'Kent',
-        },
-      },
-      {
-        '@type': 'City',
-        name: 'Maidstone',
-        containedInPlace: {
-          '@type': 'AdministrativeArea',
-          name: 'Kent',
-        },
-      },
-      {
-        '@type': 'City',
-        name: 'Canterbury',
-        containedInPlace: {
-          '@type': 'AdministrativeArea',
-          name: 'Kent',
-        },
       },
       {
         '@type': 'AdministrativeArea',
@@ -59,18 +38,19 @@ export default function StructuredData() {
         name: 'South East England',
       },
     ],
+    priceRange: '££-£££',
+    image: 'https://www.tfrco.co.uk/logo.png',
+    logo: 'https://www.tfrco.co.uk/logo.png',
     foundingDate: '2021-03-19',
     founder: {
       '@type': 'Person',
       name: company.registration.director,
     },
-    url: 'https://www.theflooringandresincompany.co.uk',
     sameAs: [
       company.social.facebook,
       company.social.tiktok,
       company.social.linkedin,
     ],
-    priceRange: '££',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -92,22 +72,22 @@ export default function StructuredData() {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Flooring and Resin Services',
+      name: 'Flooring Services',
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Carpet Installation',
-            description: 'Professional carpet and carpet tile installation for domestic and commercial properties',
+            name: 'Carpet Flooring Installation',
+            description: 'Contract carpets for care homes, hospitality, offices and domestic properties',
           },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Vinyl Flooring',
-            description: 'LVT, sheet vinyl, and cap-and-cove installations',
+            name: 'Vinyl Flooring Installation',
+            description: 'LVT, sheet vinyl and cap-and-cove installations for healthcare, wet rooms and high-traffic areas',
           },
         },
         {
@@ -115,15 +95,68 @@ export default function StructuredData() {
           itemOffered: {
             '@type': 'Service',
             name: 'Laminate & Wood Flooring',
-            description: 'Engineered wood and laminate flooring installation',
+            description: 'Engineered and solid wood laminate flooring for commercial and domestic spaces',
           },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Resin Flooring & Feature Surfaces',
-            description: 'Bespoke resin installations for floors, worktops, walls, and decorative pieces',
+            name: 'Resin & Feature Surfaces',
+            description: 'Bespoke resin flooring, walls and worktops for kitchens, bathrooms and commercial spaces',
+          },
+        },
+      ],
+    },
+  };
+
+  // Separate Service schema
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Flooring Installation',
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'The Flooring and Resin Company',
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Ashford, Kent',
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Flooring Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Carpet Flooring Installation',
+            description: 'Contract carpets for care homes, hospitality, offices and domestic properties',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Vinyl Flooring Installation',
+            description: 'LVT, sheet vinyl and cap-and-cove installations for healthcare, wet rooms and high-traffic areas',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Laminate & Wood Flooring',
+            description: 'Engineered and solid wood laminate flooring for commercial and domestic spaces',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Resin & Feature Surfaces',
+            description: 'Bespoke resin flooring, walls and worktops for kitchens, bathrooms and commercial spaces',
           },
         },
       ],
@@ -131,9 +164,15 @@ export default function StructuredData() {
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+    </>
   );
 }

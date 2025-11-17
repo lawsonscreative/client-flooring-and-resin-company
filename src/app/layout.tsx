@@ -7,7 +7,11 @@ import MobileStickyContactBar from '@/components/MobileStickyContactBar';
 import StructuredData from '@/components/StructuredData';
 import { company } from '@/content/company';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '600', '700'],
+});
 
 export const metadata: Metadata = {
   title: {

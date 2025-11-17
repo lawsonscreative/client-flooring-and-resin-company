@@ -184,7 +184,7 @@ export default function Home() {
             </div>
 
             {/* Resin & Feature Surfaces Card - FEATURED */}
-            <div className="group bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border-2 border-purple-200 hover:border-purple-400 hover:-translate-y-1 relative overflow-hidden">
+            <div className="group bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border-2 border-brand-pink/20 hover:border-brand-pink/40 hover:-translate-y-1 relative overflow-hidden">
               {/* Featured badge */}
               <div className="absolute top-4 right-4 bg-gradient-to-r from-brand-pink to-brand-purple text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                 FEATURED
@@ -202,7 +202,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Bespoke resin floors, walls and worktops that blend art with practicality – from subtle finishes to bold statement pieces.
               </p>
-              <Link href="/resin-feature-surfaces" className="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center group/link">
+              <Link href="/resin-feature-surfaces" className="text-brand-pink font-semibold hover:text-brand-pink-dark inline-flex items-center group/link">
                 Explore resin surfaces
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

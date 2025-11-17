@@ -300,55 +300,55 @@ export default function Services() {
             </div>
 
             {/* Resin & Feature Surfaces */}
-            <div className="group bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:border-purple-300 transition-all duration-300 p-8 hover:-translate-y-1 relative overflow-hidden">
+            <div className="group bg-white border-2 border-brand-pink/20 rounded-2xl shadow-lg hover:shadow-2xl hover:border-brand-pink/40 transition-all duration-300 p-8 hover:-translate-y-1 relative overflow-hidden">
               {/* Featured Badge */}
               <div className="absolute top-0 right-0 bg-gradient-to-br from-brand-pink to-brand-purple text-white text-xs font-bold px-4 py-1 rounded-bl-xl shadow-lg">
                 FEATURED
               </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & Feature Surfaces</h3>
-              <p className="text-sm font-semibold text-purple-600 mb-3">Best for: Kitchens, bathrooms, feature walls, hospitality venues, and showrooms</p>
+              <p className="text-sm font-semibold text-brand-pink mb-3">Best for: Kitchens, bathrooms, feature walls, hospitality venues, and showrooms</p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Resin creates seamless, hygienic surfaces that combine art with function. Whether you want a subtle polished concrete effect or a bold metallic feature, we design and install bespoke resin floors, walls and worktops that make spaces memorable.
               </p>
               <p className="text-sm font-semibold text-gray-500 mb-3">Benefits:</p>
               <ul className="space-y-2 text-sm text-gray-600 mb-6">
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Seamless and easy to clean
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Customisable colours and finishes
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Durable and chemical-resistant
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Ideal for wet areas and high-hygiene environments
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Can incorporate logos, artwork, or patterns
                 </li>
               </ul>
-              <Link href="/resin-feature-surfaces" className="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center group/link">
+              <Link href="/resin-feature-surfaces" className="text-brand-pink font-semibold hover:text-brand-pink-dark inline-flex items-center group/link">
                 Learn more about resin
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

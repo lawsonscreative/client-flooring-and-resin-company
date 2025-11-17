@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main id="main-content">
       {/* Modern Hero Section */}
-      <section className="relative min-h-screen pt-20 pb-24 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="relative pt-20 pb-12 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
@@ -84,14 +84,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* Scroll Down Indicator - Desktop: Positioned at section level, below all content */}
-        <div className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-          <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" aria-label="Scroll down">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
+            {/* Scroll Down Indicator - Desktop */}
+            <div className="hidden lg:block mt-12 animate-bounce">
+              <svg className="w-6 h-6 text-white/60 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" aria-label="Scroll down">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </div>
+          </div>
         </div>
 
         {/* Scroll Down Indicator - Mobile: Fixed to viewport to stay above sticky bar */}

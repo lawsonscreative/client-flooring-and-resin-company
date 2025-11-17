@@ -5,13 +5,10 @@ import { company } from '@/content/company';
 export default function Home() {
   return (
     <main id="main-content">
-      {/* Modern Hero Section - Full Screen */}
-      <section className="relative h-[75vh] md:h-[85vh] flex items-center justify-center overflow-hidden">
-        {/* Background Gradient */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
-
+      {/* Modern Hero Section */}
+      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 py-6 md:py-8 text-center">
+        <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
             {/* Eyebrow text */}
             <p className="text-sm sm:text-base md:text-lg text-blue-300 mb-2 md:mb-3 font-medium tracking-wide">
@@ -89,13 +86,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
       </section>
 
       {/* Services Overview Section */}
@@ -167,7 +157,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Laminate & Wood</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Laminate & wood</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Engineered and solid wood laminate flooring that combines commercial-grade durability with the natural look of real wood. Ideal for offices, retail spaces and family homes where style and strength matter.
               </p>
@@ -194,9 +184,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & Feature Surfaces</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin surfaces</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Bespoke resin floors, walls and worktops that blend art with practicality. From subtle finishes to bold statement pieces.
+                Bespoke resin floors, walls, worktops and feature surfaces that blend art with practicality. From subtle finishes to bold statement pieces.
               </p>
               <Link href="/resin-feature-surfaces" className="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center group/link">
                 Explore resin surfaces

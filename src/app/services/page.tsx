@@ -78,13 +78,10 @@ export default function Services() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main id="main-content">
-      {/* Hero - EXACT COPY OF HOMEPAGE */}
-      <section className="relative h-[75vh] md:h-[85vh] flex items-center justify-center overflow-hidden">
-        {/* Background Gradient */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
-
+      {/* Hero */}
+      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Hero Content */}
-        <div className="relative z-20 container mx-auto px-6 py-6 md:py-8 text-center">
+        <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
             {/* Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight">
@@ -152,13 +149,6 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
         </div>
       </section>
 

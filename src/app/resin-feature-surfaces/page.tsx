@@ -14,8 +14,8 @@ export default function ResinFeatureSurfaces() {
       <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight">
-              Stunning resin<br />feature surfaces
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 md:mb-4 leading-tight">
+              Stunning resin feature surfaces
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
               Where creativity meets performance. Unique resin surfaces that transform spaces into works of art.

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Previous Work | Portfolio of Flooring Projects | The Flooring and Resin Company',
-  description: 'See our recent flooring and resin installations across homes, care homes, schools and commercial spaces in Kent and the South East.',
+  title: 'Previous Work | Flooring & Resin Projects in Kent | The Flooring and Resin Company',
+  description: 'View our portfolio of flooring and resin installations across Kent. Care homes, schools, commercial spaces and domestic properties. See our work, read client testimonials.',
 };
 
 export default function PreviousWorkLayout({
@@ -10,5 +10,5 @@ export default function PreviousWorkLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return children;
 }

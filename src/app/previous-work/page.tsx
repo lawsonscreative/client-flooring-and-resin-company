@@ -36,7 +36,7 @@ export default function PreviousWork() {
                 href="/contact"
                 className="group inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
-                Discuss your project
+                Request a Quote
                 <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -45,7 +45,7 @@ export default function PreviousWork() {
                 href="/services"
                 className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all duration-200 border-2 border-white/30 hover:border-white/50"
               >
-                View our services
+                Our Services
               </Link>
             </div>
 

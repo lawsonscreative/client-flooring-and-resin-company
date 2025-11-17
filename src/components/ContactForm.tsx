@@ -153,6 +153,43 @@ export default function ContactForm() {
         />
       </div>
 
+      {/* Property Type */}
+      <div>
+        <label htmlFor="propertyType" className="block text-sm font-semibold text-neutral-700 mb-2">
+          Property Type
+        </label>
+        <select
+          id="propertyType"
+          name="propertyType"
+          value={formData.propertyType}
+          onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
+          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+        >
+          <option value="">Select property type</option>
+          <option value="home">Home</option>
+          <option value="commercial">Commercial</option>
+          <option value="school">School</option>
+          <option value="care-home">Care home</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      {/* Project Location */}
+      <div>
+        <label htmlFor="location" className="block text-sm font-semibold text-neutral-700 mb-2">
+          Project location (town/postcode)
+        </label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          placeholder="e.g. Ashford, TN24"
+          value={formData.location}
+          onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+          className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
+        />
+      </div>
+
       {/* Enquiry Type */}
       <div>
         <label htmlFor="enquiryType" className="block text-sm font-semibold text-neutral-700 mb-2">
@@ -173,44 +210,6 @@ export default function ContactForm() {
       {/* Additional fields if requesting a quote */}
       {formData.enquiryType === 'quote' && (
         <>
-          {/* Property Type */}
-          <div>
-            <label htmlFor="propertyType" className="block text-sm font-semibold text-neutral-700 mb-2">
-              Property Type
-            </label>
-            <select
-              id="propertyType"
-              name="propertyType"
-              value={formData.propertyType}
-              onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
-              className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
-            >
-              <option value="">Select property type</option>
-              <option value="domestic">Domestic home</option>
-              <option value="care-home">Care home</option>
-              <option value="school">School</option>
-              <option value="office">Office</option>
-              <option value="hospitality">Hospitality/Leisure</option>
-              <option value="healthcare">Healthcare</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          {/* Location */}
-          <div>
-            <label htmlFor="location" className="block text-sm font-semibold text-neutral-700 mb-2">
-              Location
-            </label>
-            <input
-              type="text"
-              id="location"
-              name="location"
-              placeholder="Town/city and county"
-              value={formData.location}
-              onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-              className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
-            />
-          </div>
 
           {/* Area to Work On */}
           <div>

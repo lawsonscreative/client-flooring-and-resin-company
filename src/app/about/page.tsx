@@ -34,13 +34,13 @@ export default function About() {
                 href="/contact"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
-                Request a Quote
+                Get a free, no-obligation quote
               </Link>
               <Link
                 href="/previous-work"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200"
               >
-                View Our Work
+                Browse recent projects
               </Link>
             </div>
 

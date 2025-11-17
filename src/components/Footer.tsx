@@ -132,9 +132,22 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="mt-12 pt-8 border-t border-neutral-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-neutral-400">
-              &copy; {currentYear} {company.name.legal}. All rights reserved.
-            </p>
+            <div className="flex flex-col items-center md:items-start space-y-2">
+              <p className="text-sm text-neutral-400">
+                &copy; {currentYear} {company.name.legal}. All rights reserved.
+              </p>
+              <p className="text-xs text-neutral-500">
+                Website design and development by{' '}
+                <a
+                  href="https://www.lawsonscreative.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-400 hover:text-white transition-colors underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
+                >
+                  Lawsons Creative
+                </a>
+              </p>
+            </div>
             <div className="flex space-x-6 text-sm">
               <Link
                 href="/privacy"

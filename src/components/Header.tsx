@@ -28,6 +28,14 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
+      {/* Skip to main content link for accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 z-50"
+      >
+        Skip to main content
+      </a>
+
       <nav className="container-custom" aria-label="Main navigation">
         <div className="flex items-center justify-between h-28 md:h-32">
           {/* Logo/Brand */}
@@ -44,8 +52,9 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-8">
+          {/* Desktop Navigation & Phone - Right aligned */}
+          <div className="hidden lg:flex lg:items-center lg:gap-8 lg:ml-auto">
+            {/* Navigation Items */}
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -59,20 +68,20 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-          </div>
 
-          {/* Phone Number (Desktop) */}
-          <div className="hidden lg:block">
-            <a
-              href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
-              className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"
-              aria-label={`Call us on ${company.contact.phoneDisplay}`}
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              <span>{company.contact.phoneDisplay}</span>
-            </a>
+            {/* Phone Number */}
+            <div className="border-l border-gray-300 pl-8">
+              <a
+                href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
+                className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"
+                aria-label={`Call us on ${company.contact.phoneDisplay}`}
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span>{company.contact.phoneDisplay}</span>
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button & Phone */}
@@ -127,14 +136,6 @@ export default function Header() {
           </div>
         )}
       </nav>
-
-      {/* Skip to main content link for accessibility */}
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 z-50"
-      >
-        Skip to main content
-      </a>
     </header>
   );
 }

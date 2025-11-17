@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main id="main-content">
       {/* Modern Hero Section */}
-      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="relative py-12 pb-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">

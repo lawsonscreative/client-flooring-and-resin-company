@@ -170,6 +170,33 @@ export default function Home() {
               </Link>
             </div>
 
+            {/* Resin & Feature Surfaces Card - FEATURED */}
+            <div className="group bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border-2 border-purple-200 hover:border-purple-400 hover:-translate-y-1 relative overflow-hidden">
+              {/* Featured badge */}
+              <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                FEATURED
+              </div>
+
+              {/* Hover border accent */}
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & Feature Surfaces</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Bespoke artistic resin installations for floors, walls, and worktops. Seamless, durable, and stunning.
+              </p>
+              <Link href="/resin-feature-surfaces" className="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center group/link">
+                Explore resin surfaces
+                <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
           </div>
         </div>
       </section>

@@ -8,8 +8,76 @@ export const metadata: Metadata = {
 };
 
 export default function Services() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Do I need to move furniture before the flooring installation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We can help move light furniture as part of the installation. For larger items or if you prefer, you can arrange furniture removal beforehand. We\'ll discuss this during your consultation and provide guidance on what needs to be cleared.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What floor preparation is required before installation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We handle all necessary floor preparation, including removing existing flooring (if needed), levelling subfloors, and ensuring proper surface conditions. Any additional preparation work required will be discussed and quoted during the consultation phase.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does a typical flooring installation take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Most residential rooms take 1-2 days. Larger homes or commercial spaces may take 3-5 days. Resin installations typically take 1-3 days depending on the area size. We\'ll provide a detailed timeline during the quotation process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Are you insured for commercial and domestic work?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we carry full Public Liability Insurance for both domestic and commercial projects. This covers all our work and gives you complete peace of mind throughout the installation process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can you supply the flooring materials or do I need to source them?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We offer both options. We can supply and install materials (including helping you choose the right products), or we can fit materials you\'ve purchased yourself. Our quotes clearly separate supply and installation costs for complete transparency.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you work evenings and weekends to minimize disruption?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we offer flexible scheduling including evenings and weekends. This is particularly useful for commercial clients who need work completed outside business hours, or for busy households. We\'ll work around your schedule to minimize disruption.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What\'s included in the uplift and disposal of old flooring?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We can remove and dispose of your existing flooring as part of the service. This includes carpet, vinyl, laminate, and tiles. The cost for uplift and disposal will be clearly itemized in your quote, and we ensure all waste is disposed of responsibly.',
+        },
+      },
+    ],
+  };
+
   return (
-    <main id="main-content">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main id="main-content">
       {/* Hero - EXACT COPY OF HOMEPAGE */}
       <section className="relative h-[75vh] md:h-[85vh] flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
@@ -143,7 +211,7 @@ export default function Services() {
                   Domestic homes
                 </li>
               </ul>
-              <Link href="/contact" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=carpet" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
                 Get a quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -185,7 +253,7 @@ export default function Services() {
                   Schools & high-traffic
                 </li>
               </ul>
-              <Link href="/contact" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=vinyl" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
                 Get a quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -227,8 +295,60 @@ export default function Services() {
                   Natural aesthetics
                 </li>
               </ul>
-              <Link href="/contact" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=laminate" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
                 Get a quote
+                <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Resin & Feature Surfaces */}
+            <div className="group bg-white border-2 border-gray-100 rounded-2xl shadow-lg hover:shadow-2xl hover:border-blue-200 transition-all duration-300 p-8 hover:-translate-y-1">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & Feature Surfaces</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Bespoke resin floors, worktops and walls which are seamless, decorative, and resilient for heavy use. Ideal for commercial kitchens and feature interiors where design and durability count.
+              </p>
+              <p className="text-sm font-semibold text-gray-500 mb-3">Best for:</p>
+              <ul className="space-y-2 text-sm text-gray-600 mb-6">
+                <li className="flex items-start">
+                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Commercial kitchens
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Hospitality venues
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Feature walls & worktops
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Wet rooms & bathrooms
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Showrooms & retail spaces
+                </li>
+              </ul>
+              <Link href="/resin-feature-surfaces" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+                Learn more about resin
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -588,6 +708,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

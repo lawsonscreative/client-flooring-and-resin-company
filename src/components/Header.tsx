@@ -37,7 +37,7 @@ export default function Header() {
       </a>
 
       <nav className="container-custom" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-28 md:h-32">
+        <div className="flex items-center h-28 md:h-32">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
@@ -53,7 +53,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation & Phone - Right aligned */}
-          <div className="hidden lg:flex lg:items-center lg:gap-8 lg:ml-auto">
+          <div className="hidden lg:flex lg:items-center lg:gap-6 lg:ml-auto">
             {/* Navigation Items */}
             {navigation.map((item) => (
               <Link
@@ -85,7 +85,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button & Phone */}
-          <div className="flex items-center space-x-4 lg:hidden">
+          <div className="flex items-center space-x-4 lg:hidden ml-auto">
             <a
               href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
               className="text-blue-600 hover:text-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded p-2"

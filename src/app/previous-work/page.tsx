@@ -80,11 +80,11 @@ export default function PreviousWork() {
               Showing <span className="font-bold text-blue-600">{filteredProjects.length}</span> {filteredProjects.length === 1 ? 'project' : 'projects'}
             </p>
           </div>
-          <div className="flex flex-wrap gap-3 justify-center" role="group" aria-label="Filter projects by type">
+          <div className="flex md:flex-wrap md:justify-center gap-3 overflow-x-auto scrollbar-hide px-4 md:px-0 -mx-4 md:mx-0 snap-x snap-mandatory" role="group" aria-label="Filter projects by type">
             <button
               onClick={() => setFilter('all')}
               aria-pressed={filter === 'all'}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
                 filter === 'all'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -95,7 +95,7 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('domestic')}
               aria-pressed={filter === 'domestic'}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
                 filter === 'domestic'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -106,7 +106,7 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('commercial')}
               aria-pressed={filter === 'commercial'}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
                 filter === 'commercial'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -117,7 +117,7 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('care-home')}
               aria-pressed={filter === 'care-home'}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
                 filter === 'care-home'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -128,7 +128,7 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('school')}
               aria-pressed={filter === 'school'}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
                 filter === 'school'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -139,7 +139,7 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('hospitality')}
               aria-pressed={filter === 'hospitality'}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
                 filter === 'hospitality'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -150,7 +150,7 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('resin')}
               aria-pressed={filter === 'resin'}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 ${
                 filter === 'resin'
                   ? 'bg-gradient-to-r from-blue-600 via-blue-700 to-purple-600 text-white shadow-lg scale-105'
                   : 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:scale-105'

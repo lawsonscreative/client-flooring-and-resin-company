@@ -173,7 +173,7 @@ export default function Services() {
           </div>
 
           {/* Service Cards Grid - SAME BLUE GRADIENT STYLE AS HOMEPAGE */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Carpet Card */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
@@ -308,7 +308,7 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & Feature Surfaces</h3>
-              <p className="text-sm font-semibold text-purple-600 mb-3">Best for: Kitchens, bathrooms, feature walls, hospitality venues, showrooms</p>
+              <p className="text-sm font-semibold text-purple-600 mb-3">Best for: Kitchens, bathrooms, feature walls, hospitality venues, and showrooms</p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Resin creates seamless, hygienic surfaces that combine art with function. Whether you want a subtle polished concrete effect or a bold metallic feature, we design and install bespoke resin floors, walls and worktops that make spaces memorable.
               </p>

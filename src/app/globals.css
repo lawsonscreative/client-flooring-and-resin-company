@@ -168,4 +168,13 @@
   .card {
     @apply bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-lg;
   }
+
+  /* Footer Spacing System */
+  main {
+    min-height: calc(100vh - 400px);
+  }
+
+  footer {
+    margin-top: 0;
+  }
 }

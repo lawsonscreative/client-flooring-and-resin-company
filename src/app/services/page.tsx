@@ -300,7 +300,11 @@ export default function Services() {
             </div>
 
             {/* Resin & Feature Surfaces */}
-            <div className="group bg-white border-2 border-gray-100 rounded-2xl shadow-lg hover:shadow-2xl hover:border-blue-200 transition-all duration-300 p-8 hover:-translate-y-1">
+            <div className="group bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:border-purple-300 transition-all duration-300 p-8 hover:-translate-y-1 relative overflow-hidden">
+              {/* Featured Badge */}
+              <div className="absolute top-0 right-0 bg-gradient-to-br from-purple-600 to-blue-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl shadow-lg">
+                FEATURED
+              </div>
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />

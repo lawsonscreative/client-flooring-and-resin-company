@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <main id="main-content">
       {/* Modern Hero Section */}
-      <section className="relative pt-12 pb-8 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="relative pt-12 pb-8 overflow-hidden bg-gradient-to-br from-brand-purple via-brand-pink to-brand-purple">
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
             {/* Eyebrow text */}
-            <p className="text-sm sm:text-base md:text-lg text-blue-300 mb-2 md:mb-3 font-medium tracking-wide">
+            <p className="text-sm sm:text-base md:text-lg text-pink-300 mb-2 md:mb-3 font-medium tracking-wide">
               Crafted through generations. Designed for today.
             </p>
 
@@ -29,7 +29,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-3 md:mb-4">
               <Link
                 href="/contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+                className="bg-brand-pink hover:bg-brand-pink-dark text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
                 Get a free, no-obligation quote
               </Link>
@@ -42,7 +42,7 @@ export default function Home() {
             </div>
 
             {/* Helper text under CTA */}
-            <p className="text-sm text-blue-200 mb-6 md:mb-8 max-w-2xl mx-auto">
+            <p className="text-sm text-pink-200 mb-6 md:mb-8 max-w-2xl mx-auto">
               We&apos;ll ask a few questions, then send a clear, itemised quote – no pushy follow-up.
             </p>
 
@@ -108,7 +108,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              From traditional flooring to <Link href="/resin-feature-surfaces" className="text-gray-900 hover:text-blue-600 transition-colors">artistic resin surfaces</Link>
+              From traditional flooring to <Link href="/resin-feature-surfaces" className="text-gray-900 hover:text-brand-pink transition-colors">artistic resin surfaces</Link>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               We offer a comprehensive range of flooring solutions for both domestic and commercial projects
@@ -118,11 +118,11 @@ export default function Home() {
           {/* Service Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Carpet Card */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1 relative overflow-hidden">
               {/* Hover border accent */}
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-brand-pink transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
@@ -131,7 +131,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Contract carpets built to last in high-traffic rooms and easy to maintain. Ideal for care homes and hospitality.
               </p>
-              <Link href="/contact?service=carpet" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=carpet" className="text-brand-pink font-semibold hover:text-brand-pink-dark inline-flex items-center group/link">
                 Get a carpet quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -140,11 +140,11 @@ export default function Home() {
             </div>
 
             {/* Vinyl Card */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1 relative overflow-hidden">
               {/* Hover border accent */}
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-brand-pink transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
@@ -153,7 +153,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Hygienic loose-lay and sheet vinyl that&apos;s simple to clean and maintain. Ideal for wet rooms, healthcare settings and anywhere spills are likely.
               </p>
-              <Link href="/contact?service=vinyl" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=vinyl" className="text-brand-pink font-semibold hover:text-brand-pink-dark inline-flex items-center group/link">
                 Get a vinyl quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -162,11 +162,11 @@ export default function Home() {
             </div>
 
             {/* Laminate Card */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1 relative overflow-hidden">
               {/* Hover border accent */}
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-brand-pink transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                 </svg>
@@ -175,7 +175,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Engineered and solid wood laminate flooring that combines commercial-grade durability with the natural look of real wood. Ideal for offices, retail spaces and family homes where style and strength matter.
               </p>
-              <Link href="/contact?service=laminate" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=laminate" className="text-brand-pink font-semibold hover:text-brand-pink-dark inline-flex items-center group/link">
                 Get a laminate quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -184,16 +184,16 @@ export default function Home() {
             </div>
 
             {/* Resin & Feature Surfaces Card - FEATURED */}
-            <div className="group bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border-2 border-purple-200 hover:border-purple-400 hover:-translate-y-1 relative overflow-hidden">
+            <div className="group bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border-2 border-purple-200 hover:border-purple-400 hover:-translate-y-1 relative overflow-hidden">
               {/* Featured badge */}
-              <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              <div className="absolute top-4 right-4 bg-gradient-to-r from-brand-pink to-brand-purple text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                 FEATURED
               </div>
 
               {/* Hover border accent */}
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-brand-pink to-brand-purple transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
@@ -230,8 +230,8 @@ export default function Home() {
           {/* Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Feature 1 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -243,8 +243,8 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -256,8 +256,8 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
@@ -269,8 +269,8 @@ export default function Home() {
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
@@ -282,8 +282,8 @@ export default function Home() {
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
@@ -295,8 +295,8 @@ export default function Home() {
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-green-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-green-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -321,7 +321,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Testimonial 1 */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-200">
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -337,7 +337,7 @@ export default function Home() {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-200">
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -353,7 +353,7 @@ export default function Home() {
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-200">
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -372,26 +372,26 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-12 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
+      <section className="py-12 bg-gradient-to-br from-brand-pink to-brand-purple text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to transform your space?
             </h2>
-            <p className="text-xl md:text-2xl mb-12 text-blue-50 leading-relaxed">
+            <p className="text-xl md:text-2xl mb-12 text-pink-50 leading-relaxed">
               From a single room to a full commercial refit, we&apos;re here to help. Tell us what you&apos;re planning and we&apos;ll recommend the right flooring or resin solution – with a clear, no-obligation quote.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="/contact"
-                className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+                className="bg-white text-brand-pink px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
                 Get a free, no-obligation quote
               </Link>
               <a
                 href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
-                className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+                className="bg-brand-pink-dark hover:bg-brand-pink text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Call: {company.contact.phoneDisplay}
               </a>

@@ -11,7 +11,7 @@ export default function About() {
   return (
     <main id="main-content">
       {/* Hero */}
-      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-purple via-brand-pink to-brand-purple">
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
@@ -29,7 +29,7 @@ export default function About() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6 md:mb-8">
               <Link
                 href="/contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+                className="bg-brand-pink hover:bg-brand-pink-dark text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
                 Get a free, no-obligation quote
               </Link>
@@ -91,7 +91,7 @@ export default function About() {
               Our story
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              The Flooring and Resin Company is run by father-and-daughter team George and Katie. George has been fitting floors since the 1970s; Katie looks after customers and keeps every project running smoothly. Together, they bring old-school craftsmanship and modern materials to homes, care settings and commercial spaces across Kent. You can see examples of our <Link href="/previous-work" className="text-blue-600 hover:text-blue-700 underline decoration-1 underline-offset-2">recent work</Link> in our portfolio.
+              The Flooring and Resin Company is run by father-and-daughter team George and Katie. George has been fitting floors since the 1970s; Katie looks after customers and keeps every project running smoothly. Together, they bring old-school craftsmanship and modern materials to homes, care settings and commercial spaces across Kent. You can see examples of our <Link href="/previous-work" className="text-brand-pink hover:text-brand-pink-dark underline decoration-1 underline-offset-2">recent work</Link> in our portfolio.
             </p>
             <p className="text-xl text-gray-600 leading-relaxed">
               George has been fitting floors since the 1970s, starting out in traditional carpet and vinyl before expanding into laminate, wood and, more recently, bespoke resin surfaces. Today, The Flooring and Resin Company brings that depth of experience to homes, care settings, schools and commercial spaces across Kent and the South East.
@@ -114,8 +114,8 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Feature 1 */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
@@ -127,8 +127,8 @@ export default function About() {
             </div>
 
             {/* Feature 2 */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -140,8 +140,8 @@ export default function About() {
             </div>
 
             {/* Feature 3 */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
@@ -153,8 +153,8 @@ export default function About() {
             </div>
 
             {/* Feature 4 */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
@@ -166,8 +166,8 @@ export default function About() {
             </div>
 
             {/* Feature 5 */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
@@ -179,8 +179,8 @@ export default function About() {
             </div>
 
             {/* Feature 6 */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                 </svg>
@@ -209,7 +209,7 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Primary Coverage */}
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white">
+              <div className="bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl shadow-xl p-8 text-white">
                 <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-6 border border-white/30">
                   <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -217,10 +217,10 @@ export default function About() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Primary Service Area</h3>
-                <p className="text-blue-50 mb-4 leading-relaxed">
+                <p className="text-pink-50 mb-4 leading-relaxed">
                   We&apos;re based in Ashford and regularly serve clients across Kent, including:
                 </p>
-                <ul className="space-y-2 text-blue-50">
+                <ul className="space-y-2 text-pink-50">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -250,7 +250,7 @@ export default function About() {
 
               {/* Extended Coverage */}
               <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-gray-100">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+                <div className="w-14 h-14 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                   <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -261,19 +261,19 @@ export default function About() {
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     East Sussex, Surrey, Essex
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     Greater London areas
                   </li>
                   <li className="flex items-start">
-                    <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     UK-wide commercial projects
@@ -289,20 +289,20 @@ export default function About() {
       </section>
 
       {/* CTA Footer - Blue gradient matching homepage */}
-      <section className="relative py-12 bg-gradient-to-br from-blue-600 to-blue-700 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-blue-400/20"></div>
+      <section className="relative py-12 bg-gradient-to-br from-brand-pink to-brand-purple text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-pink/20 via-brand-purple/10 to-brand-pink/20"></div>
 
         <div className="relative z-10 container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to discuss your project?
             </h2>
-            <p className="text-xl md:text-2xl text-blue-50 mb-10 leading-relaxed">
+            <p className="text-xl md:text-2xl text-pink-50 mb-10 leading-relaxed">
               Get in touch for a free consultation and no-obligation quote. We&apos;re here to help bring your flooring vision to life.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+              className="inline-flex items-center justify-center bg-white text-brand-pink px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
             >
               Get in touch
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

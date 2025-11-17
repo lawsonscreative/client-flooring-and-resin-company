@@ -9,7 +9,7 @@ export default function MobileStickyContactBar() {
         {/* Call Button */}
         <a
           href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
-          className="flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white py-3 px-2 hover:from-blue-700 hover:to-blue-800 transition-all duration-200 active:scale-95"
+          className="flex flex-col items-center justify-center bg-gradient-to-br from-brand-pink to-brand-purple text-white py-3 px-2 hover:from-brand-pink-dark hover:to-brand-purple-dark transition-all duration-200 active:scale-95"
           aria-label="Call us"
         >
           <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,7 +35,7 @@ export default function MobileStickyContactBar() {
         {/* Quote Button */}
         <a
           href="/contact"
-          className="flex flex-col items-center justify-center bg-white text-blue-600 py-3 px-2 hover:bg-gray-50 transition-all duration-200 active:scale-95 border-l border-gray-200"
+          className="flex flex-col items-center justify-center bg-white text-brand-pink py-3 px-2 hover:bg-gray-50 transition-all duration-200 active:scale-95 border-l border-gray-200"
           aria-label="Request a quote"
         >
           <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

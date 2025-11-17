@@ -19,7 +19,7 @@ export default function PreviousWork() {
   return (
     <main id="main-content">
       {/* Hero */}
-      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-purple via-brand-pink to-brand-purple">
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 md:mb-4 leading-tight">
@@ -31,7 +31,7 @@ export default function PreviousWork() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6 md:mb-8">
               <Link
                 href="/contact"
-                className="group inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+                className="group inline-flex items-center justify-center bg-gradient-to-r from-brand-pink to-brand-purple text-white px-8 py-3 rounded-lg text-lg font-semibold hover:from-brand-pink-dark hover:to-brand-purple transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
                 Get a free, no-obligation quote
                 <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,19 +49,19 @@ export default function PreviousWork() {
             {/* Trust Signals */}
             <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-12 text-white text-sm md:text-base">
               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
-                <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="font-semibold">50+ Years Experience</span>
               </div>
               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
-                <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
                 <span className="font-semibold">Fully Insured</span>
               </div>
               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
-                <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
                 <span className="font-semibold">Family Run</span>
@@ -77,16 +77,16 @@ export default function PreviousWork() {
           <div className="text-center mb-4">
             <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-2">Filter projects by type</p>
             <p className="text-sm text-gray-500" aria-live="polite" aria-atomic="true">
-              Showing <span className="font-bold text-blue-600">{filteredProjects.length}</span> {filteredProjects.length === 1 ? 'project' : 'projects'}
+              Showing <span className="font-bold text-brand-pink">{filteredProjects.length}</span> {filteredProjects.length === 1 ? 'project' : 'projects'}
             </p>
           </div>
           <div className="flex md:flex-wrap md:justify-center gap-3 overflow-x-auto scrollbar-hide px-4 md:px-0 -mx-4 md:mx-0 snap-x snap-mandatory" role="group" aria-label="Filter projects by type">
             <button
               onClick={() => setFilter('all')}
               aria-pressed={filter === 'all'}
-              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 ${
                 filter === 'all'
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-brand-pink to-brand-purple text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
               }`}
             >
@@ -95,9 +95,9 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('domestic')}
               aria-pressed={filter === 'domestic'}
-              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 ${
                 filter === 'domestic'
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-brand-pink to-brand-purple text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
               }`}
             >
@@ -106,9 +106,9 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('commercial')}
               aria-pressed={filter === 'commercial'}
-              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 ${
                 filter === 'commercial'
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-brand-pink to-brand-purple text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
               }`}
             >
@@ -117,9 +117,9 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('care-home')}
               aria-pressed={filter === 'care-home'}
-              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 ${
                 filter === 'care-home'
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-brand-pink to-brand-purple text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
               }`}
             >
@@ -128,9 +128,9 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('school')}
               aria-pressed={filter === 'school'}
-              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 ${
                 filter === 'school'
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-brand-pink to-brand-purple text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
               }`}
             >
@@ -139,9 +139,9 @@ export default function PreviousWork() {
             <button
               onClick={() => setFilter('hospitality')}
               aria-pressed={filter === 'hospitality'}
-              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+              className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 ${
                 filter === 'hospitality'
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-brand-pink to-brand-purple text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
               }`}
             >
@@ -152,7 +152,7 @@ export default function PreviousWork() {
               aria-pressed={filter === 'resin'}
               className={`flex-shrink-0 snap-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 ${
                 filter === 'resin'
-                  ? 'bg-gradient-to-r from-blue-600 via-blue-700 to-purple-600 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-brand-pink via-brand-purple to-brand-purple text-white shadow-lg scale-105'
                   : 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:scale-105'
               }`}
             >
@@ -180,20 +180,20 @@ export default function PreviousWork() {
       </section>
 
       {/* CTA Footer - Blue gradient matching homepage */}
-      <section className="relative py-12 bg-gradient-to-br from-blue-600 to-blue-700 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-blue-400/20"></div>
+      <section className="relative py-12 bg-gradient-to-br from-brand-pink to-brand-purple text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-pink/20 via-brand-purple/10 to-brand-pink/20"></div>
 
         <div className="relative z-10 container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to transform your space?
             </h2>
-            <p className="text-xl md:text-2xl text-blue-50 mb-10 leading-relaxed">
+            <p className="text-xl md:text-2xl text-pink-50 mb-10 leading-relaxed">
               We&apos;re continually adding more of our work to this page. If you&apos;d like to see examples similar to your project, just mention it when you get in touch.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+              className="inline-flex items-center justify-center bg-white text-brand-pink px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
             >
               Discuss your project
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -31,7 +31,7 @@ export default function Header() {
       {/* Skip to main content link for accessibility */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 z-50"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-pink text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 z-50"
       >
         Skip to main content
       </a>
@@ -59,9 +59,9 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-gray-700 hover:text-blue-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1 border-b-2 ${
+                className={`text-gray-700 hover:text-brand-pink font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 rounded px-2 py-1 border-b-2 ${
                   isActive(item.href)
-                    ? 'border-blue-600 text-blue-600'
+                    ? 'border-brand-pink text-brand-pink'
                     : 'border-transparent'
                 }`}
               >
@@ -73,7 +73,7 @@ export default function Header() {
             <div className="border-l border-gray-300 pl-6">
               <a
                 href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
-                className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"
+                className="flex items-center space-x-2 text-brand-pink hover:text-brand-pink-dark font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 rounded px-2 py-1"
                 aria-label={`Call us on ${company.contact.phoneDisplay}`}
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -88,7 +88,7 @@ export default function Header() {
           <div className="flex items-center space-x-4 lg:hidden ml-auto">
             <a
               href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
-              className="text-blue-600 hover:text-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded p-2"
+              className="text-brand-pink hover:text-brand-pink-dark transition-colors focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 rounded p-2"
               aria-label={`Call us on ${company.contact.phoneDisplay}`}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -97,7 +97,7 @@ export default function Header() {
             </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded p-2"
+              className="text-gray-700 hover:text-brand-pink focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 rounded p-2"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle mobile menu"
             >
@@ -122,9 +122,9 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`text-gray-700 hover:text-blue-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1 border-l-4 ${
+                  className={`text-gray-700 hover:text-brand-pink font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-brand-pink-light focus:ring-offset-2 rounded px-2 py-1 border-l-4 ${
                     isActive(item.href)
-                      ? 'border-blue-600 text-blue-600 bg-blue-50'
+                      ? 'border-brand-pink text-brand-pink bg-pink-50'
                       : 'border-transparent'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}

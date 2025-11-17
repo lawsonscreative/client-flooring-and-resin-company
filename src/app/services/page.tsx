@@ -79,7 +79,7 @@ export default function Services() {
       />
       <main id="main-content">
       {/* Hero */}
-      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-purple via-brand-pink to-brand-purple">
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
@@ -97,7 +97,7 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6 md:mb-8">
               <Link
                 href="/contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+                className="bg-brand-pink hover:bg-brand-pink-dark text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
                 Get a free, no-obligation quote
               </Link>
@@ -157,7 +157,7 @@ export default function Services() {
           {/* Intro Paragraph */}
           <div className="text-center mb-12">
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Choosing the right floor isn&apos;t just about how it looks. We help you balance durability, safety, hygiene and budget – then install it with minimal disruption. From contract carpet in <Link href="/previous-work" className="text-blue-600 hover:text-blue-700 underline decoration-1 underline-offset-2">care homes</Link> to slip-resistant vinyl in wet rooms and <Link href="/resin-feature-surfaces" className="text-blue-600 hover:text-blue-700 underline decoration-1 underline-offset-2">resin features</Link> in reception areas, we&apos;ll recommend what will genuinely work for your space.
+              Choosing the right floor isn&apos;t just about how it looks. We help you balance durability, safety, hygiene and budget – then install it with minimal disruption. From contract carpet in <Link href="/previous-work" className="text-brand-pink hover:text-brand-pink-dark underline decoration-1 underline-offset-2">care homes</Link> to slip-resistant vinyl in wet rooms and <Link href="/resin-feature-surfaces" className="text-brand-pink hover:text-brand-pink-dark underline decoration-1 underline-offset-2">resin features</Link> in reception areas, we&apos;ll recommend what will genuinely work for your space.
             </p>
           </div>
 
@@ -174,10 +174,10 @@ export default function Services() {
           {/* Service Cards Grid - SAME BLUE GRADIENT STYLE AS HOMEPAGE */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Carpet Card */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1 relative overflow-hidden">
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-brand-pink transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
@@ -189,25 +189,25 @@ export default function Services() {
               <p className="text-sm font-semibold text-gray-500 mb-3">Best for:</p>
               <ul className="space-y-2 text-sm text-gray-600 mb-6">
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Care homes & hospitality
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Offices & commercial
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Domestic homes
                 </li>
               </ul>
-              <Link href="/contact?service=carpet" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=carpet" className="text-brand-pink font-semibold hover:text-brand-pink-dark inline-flex items-center group/link">
                 Get a quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -216,10 +216,10 @@ export default function Services() {
             </div>
 
             {/* Vinyl Card */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1 relative overflow-hidden">
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-brand-pink transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
@@ -231,25 +231,25 @@ export default function Services() {
               <p className="text-sm font-semibold text-gray-500 mb-3">Best for:</p>
               <ul className="space-y-2 text-sm text-gray-600 mb-6">
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Healthcare facilities
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Kitchens & wet rooms
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Schools & high-traffic
                 </li>
               </ul>
-              <Link href="/contact?service=vinyl" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=vinyl" className="text-brand-pink font-semibold hover:text-brand-pink-dark inline-flex items-center group/link">
                 Get a quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -258,10 +258,10 @@ export default function Services() {
             </div>
 
             {/* Laminate Card */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1 relative overflow-hidden">
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-brand-pink transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                 </svg>
@@ -273,25 +273,25 @@ export default function Services() {
               <p className="text-sm font-semibold text-gray-500 mb-3">Best for:</p>
               <ul className="space-y-2 text-sm text-gray-600 mb-6">
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Living rooms & hallways
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Commercial showrooms
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-brand-pink mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Natural aesthetics
                 </li>
               </ul>
-              <Link href="/contact?service=laminate" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/contact?service=laminate" className="text-brand-pink font-semibold hover:text-brand-pink-dark inline-flex items-center group/link">
                 Get a quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -302,10 +302,10 @@ export default function Services() {
             {/* Resin & Feature Surfaces */}
             <div className="group bg-white border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-2xl hover:border-purple-300 transition-all duration-300 p-8 hover:-translate-y-1 relative overflow-hidden">
               {/* Featured Badge */}
-              <div className="absolute top-0 right-0 bg-gradient-to-br from-purple-600 to-blue-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl shadow-lg">
+              <div className="absolute top-0 right-0 bg-gradient-to-br from-brand-pink to-brand-purple text-white text-xs font-bold px-4 py-1 rounded-bl-xl shadow-lg">
                 FEATURED
               </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
@@ -371,8 +371,8 @@ export default function Services() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {/* Step 1 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-brand-pink/30">
                 1
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Survey & advice</h3>
@@ -382,8 +382,8 @@ export default function Services() {
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-brand-pink/30">
                 2
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Clear quote</h3>
@@ -393,8 +393,8 @@ export default function Services() {
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-brand-pink/30">
                 3
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Scheduled around you</h3>
@@ -404,8 +404,8 @@ export default function Services() {
             </div>
 
             {/* Step 4 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-brand-pink/30">
                 4
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Tidy, respectful fitters</h3>
@@ -431,8 +431,8 @@ export default function Services() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Feature 1 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -444,8 +444,8 @@ export default function Services() {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -457,8 +457,8 @@ export default function Services() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-blue-200 transition-all duration-300 p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+            <div className="bg-white border-2 border-gray-100 rounded-xl shadow-md hover:shadow-xl hover:border-brand-pink-light transition-all duration-300 p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-pink to-brand-purple rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-brand-pink/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -487,20 +487,20 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {/* Step 1 */}
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-brand-pink to-brand-purple rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-brand-pink/30">
                   1
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Get in Touch</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   Call, WhatsApp, or use our contact form. Tell us about your project, and we&apos;ll arrange a convenient time to discuss.
                 </p>
-                <p className="text-sm text-blue-600 font-semibold">
+                <p className="text-sm text-brand-pink font-semibold">
                   Usually same day response
                 </p>
               </div>
               {/* Connector Arrow - Hidden on mobile */}
-              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-blue-300">
+              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-pink-300">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -509,20 +509,20 @@ export default function Services() {
 
             {/* Step 2 */}
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-brand-pink to-brand-purple rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-brand-pink/30">
                   2
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Free Consultation</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   We visit your site to assess the space, discuss your requirements, and provide honest advice on the best solution.
                 </p>
-                <p className="text-sm text-blue-600 font-semibold">
+                <p className="text-sm text-brand-pink font-semibold">
                   No obligation, no pressure
                 </p>
               </div>
               {/* Connector Arrow */}
-              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-blue-300">
+              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-pink-300">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -531,20 +531,20 @@ export default function Services() {
 
             {/* Step 3 */}
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-blue-500/30">
+              <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-brand-pink hover:-translate-y-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-brand-pink to-brand-purple rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold shadow-lg shadow-brand-pink/30">
                   3
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Detailed Quote</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
                   We provide a clear, itemized quote with no hidden costs. We can supply materials or fit your own - whatever works best for you.
                 </p>
-                <p className="text-sm text-blue-600 font-semibold">
+                <p className="text-sm text-brand-pink font-semibold">
                   Transparent pricing
                 </p>
               </div>
               {/* Connector Arrow */}
-              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-blue-300">
+              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-pink-300">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -553,12 +553,12 @@ export default function Services() {
 
             {/* Step 4 */}
             <div>
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-gradient-to-br from-brand-pink to-brand-purple rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 text-white text-2xl font-bold border border-white/30">
                   4
                 </div>
                 <h3 className="text-xl font-bold mb-3">Expert Installation</h3>
-                <p className="text-blue-50 leading-relaxed mb-4">
+                <p className="text-pink-50 leading-relaxed mb-4">
                   We arrive on time, work efficiently, and leave your space clean and ready to use. Quality installation, every time.
                 </p>
                 <p className="text-sm text-white font-semibold">
@@ -623,7 +623,7 @@ export default function Services() {
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
                 <span>How much disruption will there be?</span>
-                <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand-pink group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -636,7 +636,7 @@ export default function Services() {
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
                 <span>Do you move furniture?</span>
-                <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand-pink group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -649,7 +649,7 @@ export default function Services() {
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
                 <span>How long do installations usually take?</span>
-                <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand-pink group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -662,7 +662,7 @@ export default function Services() {
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
                 <span>How do I care for my new floor?</span>
-                <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand-pink group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -675,7 +675,7 @@ export default function Services() {
             <details className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <summary className="cursor-pointer p-6 font-semibold text-lg text-gray-900 flex justify-between items-center">
                 <span>What guarantees do you offer?</span>
-                <svg className="w-5 h-5 text-blue-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-brand-pink group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
@@ -694,13 +694,13 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-200"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-brand-pink to-brand-purple text-white px-6 py-3 rounded-lg font-semibold hover:from-brand-pink-dark hover:to-brand-purple transition-all duration-200"
               >
                 Contact us
               </Link>
               <a
                 href="tel:07595317477"
-                className="inline-flex items-center justify-center bg-white border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-200"
+                className="inline-flex items-center justify-center bg-white border-2 border-brand-pink text-brand-pink px-6 py-3 rounded-lg font-semibold hover:bg-pink-50 transition-all duration-200"
               >
                 Call: 07595 317477
               </a>
@@ -710,26 +710,26 @@ export default function Services() {
       </section>
 
       {/* Final CTA Section - SAME AS HOMEPAGE */}
-      <section className="py-12 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
+      <section className="py-12 bg-gradient-to-br from-brand-pink to-brand-purple text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to transform your space?
             </h2>
-            <p className="text-xl md:text-2xl mb-12 text-blue-50 leading-relaxed">
+            <p className="text-xl md:text-2xl mb-12 text-pink-50 leading-relaxed">
               From a single room to a complete commercial fit-out, we&apos;re here to help. Get in touch for a no-obligation chat about your flooring needs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="/contact"
-                className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+                className="bg-white text-brand-pink px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
                 Get a free, no-obligation quote
               </Link>
               <a
                 href="tel:07595317477"
-                className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+                className="bg-brand-pink-dark hover:bg-brand-pink text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Call: 07595 317477
               </a>

@@ -9,6 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          purple: '#68215D',
+          'purple-dark': '#52194a',
+          'purple-light': '#7e2873',
+          pink: '#D91372',
+          'pink-dark': '#b30f5e',
+          'pink-light': '#e6468f',
+        },
         primary: {
           50: '#f0f7ff',
           100: '#e0efff',

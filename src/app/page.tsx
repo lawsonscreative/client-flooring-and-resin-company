@@ -85,15 +85,17 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Scroll Down Indicator - Mobile: Fixed to viewport to stay above sticky bar */}
-            <div className="lg:hidden fixed bottom-20 left-1/2 -translate-x-1/2 animate-bounce z-30">
-              <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" aria-label="Scroll down">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
+            {/* Scroll Down Indicator - Desktop: Separate positioned element below trust strip */}
+            <div className="hidden lg:block mt-12 text-center">
+              <div className="animate-bounce inline-block">
+                <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" aria-label="Scroll down">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
             </div>
 
-            {/* Scroll Down Indicator - Desktop: Absolute within hero */}
-            <div className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            {/* Scroll Down Indicator - Mobile: Fixed to viewport to stay above sticky bar */}
+            <div className="lg:hidden fixed bottom-20 left-1/2 -translate-x-1/2 animate-bounce z-30">
               <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" aria-label="Scroll down">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>

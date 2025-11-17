@@ -12,9 +12,10 @@ export default function Header() {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Resin & Feature Surfaces', href: '/resin-feature-surfaces' },
     { name: 'Previous Work', href: '/previous-work' },
+    { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
 

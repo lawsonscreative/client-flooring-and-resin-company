@@ -157,7 +157,7 @@ export default function Services() {
           {/* Intro Paragraph */}
           <div className="text-center mb-12">
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Choosing the right floor isn&apos;t just about how it looks. We help you balance durability, safety, hygiene and budget – then install it with minimal disruption. From contract carpet in care homes to slip-resistant vinyl in wet rooms and resin features in reception areas, we&apos;ll recommend what will genuinely work for your space.
+              Choosing the right floor isn&apos;t just about how it looks. We help you balance durability, safety, hygiene and budget – then install it with minimal disruption. From contract carpet in <Link href="/previous-work" className="text-blue-600 hover:text-blue-700 underline decoration-1 underline-offset-2">care homes</Link> to slip-resistant vinyl in wet rooms and <Link href="/resin-feature-surfaces" className="text-blue-600 hover:text-blue-700 underline decoration-1 underline-offset-2">resin features</Link> in reception areas, we&apos;ll recommend what will genuinely work for your space.
             </p>
           </div>
 

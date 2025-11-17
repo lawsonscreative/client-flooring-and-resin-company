@@ -101,7 +101,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              From traditional flooring to artistic resin surfaces
+              From traditional flooring to <Link href="/resin-feature-surfaces" className="text-blue-600 hover:text-blue-700 underline decoration-2 underline-offset-4">artistic resin surfaces</Link>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               We offer a comprehensive range of flooring solutions for both domestic and commercial projects

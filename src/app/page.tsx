@@ -118,7 +118,7 @@ export default function Home() {
                 Contract carpets built to last in high-traffic rooms and easy to maintain. Ideal for care homes and hospitality.
               </p>
               <Link href="/contact?service=carpet" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
-                Get a quote
+                Get a carpet quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -140,7 +140,7 @@ export default function Home() {
                 Hygienic loose-lay and sheet vinyl that&apos;s simple to clean and maintain. Ideal for wet rooms, healthcare settings and anywhere spills are likely.
               </p>
               <Link href="/contact?service=vinyl" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
-                Get a quote
+                Get a vinyl quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -162,7 +162,7 @@ export default function Home() {
                 Engineered and solid wood laminate flooring that combines commercial-grade durability with the natural look of real wood. Ideal for offices, retail spaces and family homes where style and strength matter.
               </p>
               <Link href="/contact?service=laminate" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
-                Get a quote
+                Get a laminate quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>

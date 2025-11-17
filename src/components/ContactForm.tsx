@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, useRef, useEffect } from 'react';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -18,6 +18,7 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const errorSummaryRef = useRef<HTMLDivElement>(null);
 
   const validateForm = (): boolean => {
     const newErrors: Record<string, string> = {};
@@ -39,6 +40,13 @@ export default function ContactForm() {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+
+  // Focus error summary when errors appear
+  useEffect(() => {
+    if (Object.keys(errors).length > 0 && errorSummaryRef.current) {
+      errorSummaryRef.current.focus();
+    }
+  }, [errors]);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -94,6 +102,42 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Error Summary */}
+      {Object.keys(errors).length > 0 && (
+        <div
+          ref={errorSummaryRef}
+          role="alert"
+          tabIndex={-1}
+          className="bg-red-50 border-2 border-red-500 rounded-lg p-4"
+        >
+          <h2 className="text-lg font-bold text-red-900 mb-2">There are errors in the form</h2>
+          <p className="text-sm text-red-800 mb-3">Please correct the following errors:</p>
+          <ul className="list-disc list-inside space-y-1">
+            {errors.name && (
+              <li className="text-red-800">
+                <a href="#name" className="underline hover:text-red-900">
+                  {errors.name}
+                </a>
+              </li>
+            )}
+            {errors.phone && (
+              <li className="text-red-800">
+                <a href="#phone" className="underline hover:text-red-900">
+                  {errors.phone}
+                </a>
+              </li>
+            )}
+            {errors.message && (
+              <li className="text-red-800">
+                <a href="#message" className="underline hover:text-red-900">
+                  {errors.message}
+                </a>
+              </li>
+            )}
+          </ul>
+        </div>
+      )}
+
       {/* Name */}
       <div>
         <label htmlFor="name" className="block text-sm font-semibold text-neutral-700 mb-2">
@@ -104,6 +148,7 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
+          autoComplete="name"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 ${
@@ -111,6 +156,7 @@ export default function ContactForm() {
           }`}
           aria-invalid={errors.name ? 'true' : 'false'}
           aria-describedby={errors.name ? 'name-error' : undefined}
+          aria-required="true"
         />
         {errors.name && (
           <p id="name-error" className="mt-1 text-sm text-red-600">
@@ -129,6 +175,7 @@ export default function ContactForm() {
           id="phone"
           name="phone"
           required
+          autoComplete="tel"
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
           className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 ${
@@ -136,6 +183,7 @@ export default function ContactForm() {
           }`}
           aria-invalid={errors.phone ? 'true' : 'false'}
           aria-describedby={errors.phone ? 'phone-error' : undefined}
+          aria-required="true"
         />
         {errors.phone && (
           <p id="phone-error" className="mt-1 text-sm text-red-600">
@@ -153,6 +201,7 @@ export default function ContactForm() {
           type="email"
           id="email"
           name="email"
+          autoComplete="email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
@@ -189,6 +238,7 @@ export default function ContactForm() {
           type="text"
           id="location"
           name="location"
+          autoComplete="postal-code"
           placeholder="e.g. Ashford, TN24"
           value={formData.location}
           onChange={(e) => setFormData({ ...formData, location: e.target.value })}
@@ -275,6 +325,7 @@ export default function ContactForm() {
           }`}
           aria-invalid={errors.message ? 'true' : 'false'}
           aria-describedby={errors.message ? 'message-error' : undefined}
+          aria-required="true"
         />
         {errors.message && (
           <p id="message-error" className="mt-1 text-sm text-red-600">
@@ -296,7 +347,11 @@ export default function ContactForm() {
 
       {/* Success Message */}
       {submitStatus === 'success' && (
-        <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6 text-green-800" role="alert">
+        <div
+          className="bg-green-50 border-2 border-green-200 rounded-lg p-6 text-green-800"
+          role="status"
+          aria-live="polite"
+        >
           <div className="flex items-start">
             <svg className="w-6 h-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />

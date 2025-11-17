@@ -74,8 +74,8 @@ export const company = {
     trading: 'The Flooring and Resin Company',
   },
   contact: {
-    phone: '07974 911629',
-    whatsapp: '+447933030318',
+    phone: '07595 317477',
+    whatsapp: '+447595317477',
   },
   // ... more fields
 };
@@ -379,8 +379,8 @@ Edit `src/app/globals.css` for:
 Edit `src/content/company.ts`:
 ```typescript
 contact: {
-  phone: '07974 911629',
-  phoneDisplay: '07974 911629',
+  phone: '07595 317477',
+  phoneDisplay: '07595 317477',
 }
 ```
 

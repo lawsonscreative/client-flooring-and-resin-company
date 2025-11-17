@@ -84,10 +84,16 @@ export default function PreviousWork() {
       {/* Filter Buttons - Blue gradient styling */}
       <section className="bg-white border-b border-gray-200 sticky top-20 z-40 shadow-md">
         <div className="container mx-auto px-6 py-8">
+          <div className="text-center mb-4">
+            <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-2">Filter projects by type</p>
+            <p className="text-sm text-gray-500">
+              Showing <span className="font-bold text-blue-600">{filteredProjects.length}</span> {filteredProjects.length === 1 ? 'project' : 'projects'}
+            </p>
+          </div>
           <div className="flex flex-wrap gap-3 justify-center">
             <button
               onClick={() => setFilter('all')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer ${
                 filter === 'all'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -97,7 +103,7 @@ export default function PreviousWork() {
             </button>
             <button
               onClick={() => setFilter('domestic')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer ${
                 filter === 'domestic'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -107,7 +113,7 @@ export default function PreviousWork() {
             </button>
             <button
               onClick={() => setFilter('commercial')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer ${
                 filter === 'commercial'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -117,7 +123,7 @@ export default function PreviousWork() {
             </button>
             <button
               onClick={() => setFilter('care-home')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer ${
                 filter === 'care-home'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -127,7 +133,7 @@ export default function PreviousWork() {
             </button>
             <button
               onClick={() => setFilter('school')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer ${
                 filter === 'school'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -137,7 +143,7 @@ export default function PreviousWork() {
             </button>
             <button
               onClick={() => setFilter('hospitality')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer ${
                 filter === 'hospitality'
                   ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:scale-105'
@@ -147,7 +153,7 @@ export default function PreviousWork() {
             </button>
             <button
               onClick={() => setFilter('resin')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 cursor-pointer ${
                 filter === 'resin'
                   ? 'bg-gradient-to-r from-blue-600 via-blue-700 to-purple-600 text-white shadow-lg scale-105'
                   : 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:scale-105'

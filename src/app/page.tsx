@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main id="main-content">
       {/* Modern Hero Section */}
-      <section className="relative py-12 pb-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="relative py-12 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="max-w-5xl mx-auto">
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
 
             {/* Scroll Down Indicator - Desktop: Separate positioned element below trust strip */}
-            <div className="hidden lg:block mt-12 text-center">
+            <div className="hidden lg:block mt-8 text-center">
               <div className="animate-bounce inline-block">
                 <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" aria-label="Scroll down">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />

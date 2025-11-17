@@ -102,7 +102,7 @@ export default function Home() {
           </div>
 
           {/* Service Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Carpet Card */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
               {/* Hover border accent */}
@@ -184,9 +184,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin surfaces</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & feature surfaces</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Bespoke resin floors, walls, worktops and feature surfaces that blend art with practicality. From subtle finishes to bold statement pieces.
+                Bespoke resin floors, walls and worktops that blend art with practicality – from subtle finishes to bold statement pieces.
               </p>
               <Link href="/resin-feature-surfaces" className="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center group/link">
                 Explore resin surfaces

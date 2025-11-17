@@ -103,7 +103,7 @@ export default function Home() {
           </div>
 
           {/* Service Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Carpet Card */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-blue-600 hover:-translate-y-1 relative overflow-hidden">
               {/* Hover border accent */}
@@ -170,32 +170,6 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Resin Card - Featured with Purple Gradient */}
-            <div className="group bg-gradient-to-br from-blue-600 via-blue-700 to-purple-600 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 relative overflow-hidden hover:-translate-y-1">
-              {/* Animated gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/0 via-purple-500/0 to-purple-400/0 group-hover:from-purple-600/20 group-hover:via-purple-500/10 group-hover:to-purple-400/20 transition-all duration-500"></div>
-
-              {/* Featured badge */}
-              <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full border border-white/30">
-                FEATURED
-              </div>
-
-              <div className="relative w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/30 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                </svg>
-              </div>
-              <h3 className="relative text-2xl font-bold text-white mb-4">Resin & Feature Surfaces</h3>
-              <p className="relative text-blue-50 mb-6 leading-relaxed">
-                Bespoke resin floors, worktops and walls which are seamless, decorative, and resilient for heavy use. Ideal for commercial kitchens and feature interiors where design and durability count.
-              </p>
-              <Link href="/resin-feature-surfaces" className="relative text-white font-semibold hover:text-blue-100 inline-flex items-center group/link">
-                Explore resin services
-                <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
           </div>
         </div>
       </section>

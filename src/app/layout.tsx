@@ -11,10 +11,10 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default: `${company.name.trading} | Ashford, Kent | 50+ Years Experience`,
+    default: `${company.name.trading} | Flooring & Resin Specialists in Ashford, Kent`,
     template: `%s | ${company.name.trading}`,
   },
-  description: 'Family-run flooring and resin specialists with over 50 years of experience. From homes to hospitals, we create surfaces that inspire. Based in Ashford, serving Kent and the South East.',
+  description: 'Family-run flooring and resin specialists based in Ashford, Kent. 50+ years\' experience installing carpet, vinyl, laminate, wood and bespoke resin surfaces for homes, care settings and commercial spaces. Get a free, no-obligation quote.',
   keywords: ['flooring', 'resin flooring', 'carpet installation', 'vinyl flooring', 'Kent flooring', 'Ashford', 'commercial flooring', 'domestic flooring'],
   authors: [{ name: company.name.legal }],
   creator: company.name.legal,
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     siteName: company.name.trading,
-    title: `${company.name.trading} | Ashford, Kent | 50+ Years Experience`,
-    description: 'Family-run flooring and resin specialists with over 50 years of experience. From homes to hospitals, we create surfaces that inspire.',
+    title: `${company.name.trading} | Flooring & Resin Specialists in Ashford, Kent`,
+    description: 'Family-run flooring and resin specialists based in Ashford, Kent. 50+ years\' experience installing carpet, vinyl, laminate, wood and bespoke resin surfaces for homes, care settings and commercial spaces.',
   },
 };
 

@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { company } from '@/content/company';
 
 export const metadata: Metadata = {
-  title: 'Resin & Feature Surfaces | The Flooring and Resin Company',
-  description: 'Bespoke resin flooring and feature surfaces in Kent. From kitchens to commercial spaces, seamless, durable, artistic installations.',
+  title: 'Resin Floors, Walls & Feature Surfaces | Ashford & Kent | The Flooring and Resin Company',
+  description: 'Bespoke resin flooring and feature surfaces in Kent. Seamless, durable, artistic resin installations for kitchens, bathrooms and commercial spaces.',
 };
 
 export default function ResinFeatureSurfaces() {

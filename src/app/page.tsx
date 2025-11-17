@@ -13,32 +13,41 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto px-6 py-6 md:py-8 text-center">
           <div className="max-w-5xl mx-auto">
+            {/* Eyebrow text */}
+            <p className="text-sm sm:text-base md:text-lg text-blue-300 mb-2 md:mb-3 font-medium tracking-wide">
+              Crafted through generations. Designed for today.
+            </p>
+
             {/* Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight">
-              Crafted through generations.<br />
-              Designed for today.
+              Flooring & resin specialists<br />in Ashford, Kent
             </h1>
 
             {/* Subheading */}
             <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
-              Family-run flooring and resin specialists with over 50 years&apos; experience fitting flooring in commercial sites, homes and care homes. Durable finishes, minimal disruption, guaranteed workmanship.
+              Family-run, fully insured flooring and resin company with over 50 years&apos; experience in homes, care homes, schools and commercial spaces. We create hard-wearing, low-maintenance floors and one-off resin features – fitted with minimal disruption and guaranteed workmanship.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6 md:mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-3 md:mb-4">
               <Link
                 href="/contact"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
               >
-                Request a Quote
+                Get a free, no-obligation quote
               </Link>
               <Link
                 href="/previous-work"
                 className="bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-200"
               >
-                View Our Work
+                Browse recent projects
               </Link>
             </div>
+
+            {/* Helper text under CTA */}
+            <p className="text-sm text-blue-200 mb-6 md:mb-8 max-w-2xl mx-auto">
+              We&apos;ll ask a few questions, then send a clear, itemised quote – no pushy follow-up.
+            </p>
 
             {/* Trust Signals */}
             <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-12 text-white text-sm md:text-base">
@@ -116,10 +125,10 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Carpet</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Contract carpets built to last in high-traffic rooms which means easy maintenance. Ideal for care homes and hospitality.
+                Contract carpets built to last in high-traffic rooms, with easy-clean finishes ideal for care homes, hospitality and busy family spaces.
               </p>
-              <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
-                Learn more
+              <Link href="/contact?service=carpet" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+                Get a quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -138,10 +147,10 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Vinyl</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Hygienic, loose-lay tile and sheet vinyl that&apos;s simple to clean. Ideal for healthcare and wet rooms.
+                Hygienic loose-lay and sheet vinyl that&apos;s simple to clean and maintain. Ideal for wet rooms, healthcare settings and anywhere spills are likely.
               </p>
-              <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
-                Learn more
+              <Link href="/contact?service=vinyl" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+                Get a quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -160,10 +169,10 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Laminate & Wood</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Engineered and solid wood laminate flooring which is durable, and commercial-grade with the natural aesthetic of real wood. Ideal for offices, retail spaces, and family homes where style and strength matters.
+                Engineered and solid wood laminate flooring that combines the warmth of real wood with commercial-grade durability – perfect for offices, retail and family homes.
               </p>
-              <Link href="/services" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
-                Learn more
+              <Link href="/contact?service=laminate" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+                Get a quote
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -187,7 +196,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & Feature Surfaces</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Bespoke artistic resin installations for floors, walls, and worktops. Seamless, durable, and stunning.
+                Bespoke resin floors, walls and worktops that blend art and practicality. From subtle finishes to bold statement pieces.
               </p>
               <Link href="/resin-feature-surfaces" className="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center group/link">
                 Explore resin surfaces
@@ -223,9 +232,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">50+ years expertise</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">50+ years of flooring expertise</h3>
               <p className="text-gray-600 leading-relaxed">
-                Decades of flooring experience via founder George Spittle, bringing unmatched knowledge to every project.
+                Founder George has been fitting floors since the 1970s, bringing decades of know-how to every project – from subfloor prep to the final trim.
               </p>
             </div>
 
@@ -236,9 +245,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Family-run service</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Family-run, personal service</h3>
               <p className="text-gray-600 leading-relaxed">
-                Katie brings an approachable, caring touch to customer service. You&apos;re not just a number to us.
+                Katie looks after your project from first call to final clean-up. You&apos;ll always speak to a real person who knows your job, not a call centre.
               </p>
             </div>
 
@@ -249,9 +258,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Domestic to commercial</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">From single rooms to full refits</h3>
               <p className="text-gray-600 leading-relaxed">
-                From single rooms to schools and care homes. Same care and quality regardless of project size.
+                Whether it&apos;s a hallway at home or a full care home refurbishment, we apply the same care, planning and attention to detail.
               </p>
             </div>
 
@@ -264,7 +273,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Creative resin work</h3>
               <p className="text-gray-600 leading-relaxed">
-                Unique resin surfaces that blend art with function. Transform spaces into conversation starters.
+                We design and install unique resin floors, walls and worktops that turn everyday spaces into talking points – ideal for receptions, kitchens and feature areas.
               </p>
             </div>
 
@@ -275,9 +284,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Flexible materials</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Supply & fit, or fit your own materials</h3>
               <p className="text-gray-600 leading-relaxed">
-                We can supply all materials or fit your own. Honest advice on what works best for your space.
+                We can supply everything, or install flooring you&apos;ve already chosen. You&apos;ll get honest advice on what will last in your space.
               </p>
             </div>
 
@@ -288,10 +297,74 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Fully insured</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Fully insured and compliant</h3>
               <p className="text-gray-600 leading-relaxed">
-                Public Liability Insurance for your complete peace of mind on every domestic and commercial project.
+                We carry full Public Liability Insurance and work to current safety standards, so you&apos;re covered on every domestic and commercial project.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              What our customers say
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Don&apos;t just take our word for it
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Testimonial 1 */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-200">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 leading-relaxed italic">
+                &ldquo;George and Katie transformed our care home corridors with slip-resistant vinyl. Professional, tidy, and worked around our residents perfectly.&rdquo;
+              </p>
+              <p className="text-gray-900 font-semibold">Care Home Manager</p>
+              <p className="text-gray-600 text-sm">Ashford</p>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-200">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 leading-relaxed italic">
+                &ldquo;The resin floor in our kitchen is stunning and so easy to keep clean. Exactly what we wanted.&rdquo;
+              </p>
+              <p className="text-gray-900 font-semibold">Homeowner</p>
+              <p className="text-gray-600 text-sm">Canterbury</p>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-200">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-700 mb-6 leading-relaxed italic">
+                &ldquo;Quick, efficient, and the laminate flooring still looks perfect two years later in our busy office.&rdquo;
+              </p>
+              <p className="text-gray-900 font-semibold">Office Manager</p>
+              <p className="text-gray-600 text-sm">Maidstone</p>
             </div>
           </div>
         </div>
@@ -305,7 +378,7 @@ export default function Home() {
               Ready to transform your space?
             </h2>
             <p className="text-xl md:text-2xl mb-12 text-blue-50 leading-relaxed">
-              From a single room to a complete commercial fit-out, we&apos;re here to help. Get in touch for a no-obligation chat about your project.
+              From a single room to a full commercial refit, we&apos;re here to help. Tell us what you&apos;re planning and we&apos;ll recommend the right flooring or resin solution – with a clear, no-obligation quote.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

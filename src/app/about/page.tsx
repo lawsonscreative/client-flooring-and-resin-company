@@ -3,8 +3,8 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us | Family-Run Flooring Specialists',
-  description: 'Family-run flooring business based in Ashford, Kent with over 50 years of experience. Personal service from George and Katie covering Kent and the South East for domestic and commercial projects.',
+  title: 'About The Flooring and Resin Company | Family-Run Flooring Specialists in Kent',
+  description: 'Meet George and Katie Spittle. Family-run flooring and resin company with over 50 years\' experience serving Ashford, Kent and the South East.',
 };
 
 export default function About() {
@@ -100,11 +100,8 @@ export default function About() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Our story
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              The Flooring and Resin Company is a family-run business based in Kent, delivering durable, high-quality flooring solutions for both domestic and commercial spaces across the country.
-            </p>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Led by George and Katie, father and daughter, we combine decades of hands-on experience with a genuine passion for craftsmanship. Every project receives attention to detail, a professional service, and results that stand the test of time.
+              The Flooring and Resin Company is run by father-and-daughter team George and Katie Spittle. George has been fitting floors since the 1970s; Katie looks after customers and keeps every project running smoothly. Together, they bring old-school craftsmanship and modern materials to homes, care settings and commercial spaces across Kent.
             </p>
           </div>
         </div>

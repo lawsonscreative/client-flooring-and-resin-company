@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Flooring Services | Carpet, Vinyl, Laminate, Resin',
-  description: 'Professional flooring solutions for every space. Carpet, vinyl, laminate, and innovative resin surfaces for domestic and commercial projects in Kent.',
+  title: 'Flooring Services | Carpet, Vinyl, Laminate & Wood | Ashford & Kent',
+  description: 'Professional flooring installation services in Ashford and Kent. Contract carpet, hygienic vinyl, engineered wood and bespoke resin surfaces for homes, care homes and commercial spaces.',
 };
 
 export default function Services() {
@@ -165,6 +165,13 @@ export default function Services() {
       {/* Services Overview Section - SAME LAYOUT AS HOMEPAGE */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
+          {/* Intro Paragraph */}
+          <div className="text-center mb-12">
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Choosing the right floor isn&apos;t just about how it looks. We help you balance durability, safety, hygiene and budget – then install it with minimal disruption. From contract carpet in care homes to slip-resistant vinyl in wet rooms and resin features in reception areas, we&apos;ll recommend what will genuinely work for your space.
+            </p>
+          </div>
+
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -311,43 +318,44 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Resin & Feature Surfaces</h3>
+              <p className="text-sm font-semibold text-purple-600 mb-3">Best for: Kitchens, bathrooms, feature walls, hospitality venues, showrooms</p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Bespoke resin floors, worktops and walls which are seamless, decorative, and resilient for heavy use. Ideal for commercial kitchens and feature interiors where design and durability count.
+                Resin creates seamless, hygienic surfaces that combine art with function. Whether you want a subtle polished concrete effect or a bold metallic feature, we design and install bespoke resin floors, walls and worktops that make spaces memorable.
               </p>
-              <p className="text-sm font-semibold text-gray-500 mb-3">Best for:</p>
+              <p className="text-sm font-semibold text-gray-500 mb-3">Benefits:</p>
               <ul className="space-y-2 text-sm text-gray-600 mb-6">
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Commercial kitchens
+                  Seamless and easy to clean
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Hospitality venues
+                  Customisable colours and finishes
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Feature walls & worktops
+                  Durable and chemical-resistant
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Wet rooms & bathrooms
+                  Ideal for wet areas and high-hygiene environments
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Showrooms & retail spaces
+                  Can incorporate logos, artwork, or patterns
                 </li>
               </ul>
-              <Link href="/resin-feature-surfaces" className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group/link">
+              <Link href="/resin-feature-surfaces" className="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center group/link">
                 Learn more about resin
                 <svg className="w-5 h-5 ml-2 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

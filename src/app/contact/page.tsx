@@ -5,8 +5,8 @@ import { company } from '@/content/company';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Flooring Quotes',
-  description: 'Get in touch for flooring and resin quotes. Call, WhatsApp, or use our contact form. Based in Ashford, Kent, serving the South East and UK-wide.',
+  title: 'Contact The Flooring and Resin Company | Request a Flooring or Resin Quote',
+  description: 'Get a free, no-obligation quote for your flooring or resin project. Family-run service, same-day responses, 50+ years\' experience in Kent.',
 };
 
 export default function Contact() {
@@ -20,10 +20,10 @@ export default function Contact() {
         <div className="relative z-20 container mx-auto px-6 py-6 md:py-8 text-center">
           <div className="max-w-5xl mx-auto">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight">
-              Let&apos;s discuss<br />your project
+              Ready to discuss your<br />flooring or resin project?
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-4 md:mb-6 max-w-3xl mx-auto leading-relaxed">
-              We&apos;re here for friendly, no-obligation conversations about your project. Whether you need a quick question answered or a detailed quote, we&apos;ll respond promptly.
+              We usually reply the same working day, and always within one business day. For urgent jobs, please call us.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6 md:mb-8">
               <a
@@ -199,8 +199,11 @@ export default function Contact() {
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Contact & Quote Request Form
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-600 mb-4">
                 Fill in the form below and we&apos;ll get back to you as soon as possible
+              </p>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                We&apos;ll never share your details with third parties, and we don&apos;t do hard-sell. It&apos;s just a conversation about what you need.
               </p>
             </div>
 

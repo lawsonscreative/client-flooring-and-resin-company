@@ -44,26 +44,25 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Navigation & Phone - Right aligned */}
-          <div className="hidden lg:flex lg:items-center lg:gap-8">
-            {/* Navigation */}
-            <div className="flex items-center gap-6">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`text-gray-700 hover:text-blue-600 font-semibold text-lg transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-3 py-2 border-b-2 ${
-                    isActive(item.href)
-                      ? 'border-blue-600 text-blue-600'
-                      : 'border-transparent'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex lg:items-center lg:space-x-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`text-gray-700 hover:text-blue-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1 border-b-2 ${
+                  isActive(item.href)
+                    ? 'border-blue-600 text-blue-600'
+                    : 'border-transparent'
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
 
-            {/* Phone Number */}
+          {/* Phone Number (Desktop) */}
+          <div className="hidden lg:block">
             <a
               href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
               className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"

@@ -53,13 +53,13 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation & Phone - Right aligned */}
-          <div className="hidden lg:flex lg:items-center lg:gap-6 lg:ml-auto">
+          <div className="hidden lg:flex lg:items-center lg:ml-auto">
             {/* Navigation Items */}
-            {navigation.map((item) => (
+            {navigation.map((item, index) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-gray-700 hover:text-blue-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1 border-b-2 ${
+                className={`text-gray-700 hover:text-blue-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-3 py-1 border-b-2 ${index < navigation.length - 1 ? 'mr-4' : ''} ${
                   isActive(item.href)
                     ? 'border-blue-600 text-blue-600'
                     : 'border-transparent'
@@ -70,7 +70,7 @@ export default function Header() {
             ))}
 
             {/* Phone Number */}
-            <div className="border-l border-gray-300 pl-8">
+            <div className="border-l border-gray-300 ml-6 pl-6">
               <a
                 href={`tel:${company.contact.phone.replace(/\s/g, '')}`}
                 className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-2 py-1"

@@ -5,10 +5,10 @@ export const company = {
   },
   tagline: 'Family-run flooring & resin specialists based in Ashford, Kent',
   contact: {
-    phone: '07595 317477',
-    phoneDisplay: '07595 317477',
-    whatsapp: '+447595317477',
-    whatsappDisplay: '+44 7595 317477',
+    phone: '07974911629',
+    phoneDisplay: '07974 911629',
+    whatsapp: '+447974911629',
+    whatsappDisplay: '+44 7974 911629',
     email: 'info@tfrco.co.uk',
   },
   address: {

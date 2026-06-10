@@ -699,10 +699,10 @@ export default function Services() {
                 Contact us
               </Link>
               <a
-                href="tel:07595317477"
+                href="tel:07974911629"
                 className="inline-flex items-center justify-center bg-white border-2 border-brand-pink text-brand-pink px-6 py-3 rounded-lg font-semibold hover:bg-pink-50 transition-all duration-200"
               >
-                Call: 07595 317477
+                Call: 07974 911629
               </a>
             </div>
           </div>
@@ -728,10 +728,10 @@ export default function Services() {
                 Get a free, no-obligation quote
               </Link>
               <a
-                href="tel:07595317477"
+                href="tel:07974911629"
                 className="bg-brand-pink-dark hover:bg-brand-pink text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Call: 07595 317477
+                Call: 07974 911629
               </a>
             </div>
           </div>
